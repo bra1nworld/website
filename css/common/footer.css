@@ -1,0 +1,92 @@
+.footer {
+    font-family: "Microsoft YaHei";
+    width: 100%;
+    height: 220px;
+    color: #ffffff;
+    border-top: 1px solid #A09E9E;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .footer-con {
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .left,
+.footer .middle {
+    float: left;
+}
+
+.footer .right {
+    float: right;
+}
+
+.footer .left {
+    width: 600px;
+}
+
+.footer .left ul {
+    height: 25px;
+    margin-top: 42px;
+}
+
+.footer .left ul li {
+    float: left;
+    margin-right: 30px;
+    font-size: 16px;
+}
+
+.footer .companyIntr {
+    margin-top: 20px;
+}
+
+.footer .left p {
+    display: block;
+    line-height: 30px;
+}
+
+.footer .middle {
+    text-align: center;
+    margin: 31px 0 0 67px;
+}
+
+.footer .middle img {
+    width: 124px;
+    height: 125px;
+}
+
+.footer .middle span {
+    display: block;
+    margin-top: 12px;
+}
+
+.footer .right .customInfo {
+    width: 250px;
+    margin-top: 35px;
+}
+
+.footer .right .tele {
+    font-size: 14px;
+}
+
+.footer .right .number {
+    font-size: 26px;
+    line-height: 46px;
+}
+
+.footer .right .thanks {
+    margin-top: 20px;
+}
+
+.footer .right .thanks .special {
+    vertical-align: top;
+}
+
+.footer .right .thanks .names {
+    display: inline-block;
+}

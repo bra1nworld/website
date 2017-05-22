@@ -1,0 +1,231 @@
+/*rankList start*/
+
+.container-left,
+.container-middle {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/*container-left start*/
+
+.container-left {
+    margin: 20px;
+    width: 263px;
+}
+
+.container-left .expertRank {
+    height: 556px;
+}
+
+.container-left .expert-title {
+    height: 36px;
+    line-height: 36px;
+    background: #e4f2fd;
+    font-size: 16px;
+    color: #000000;
+}
+
+.container-left .expert-title>span {
+    position: relative;
+    margin-left: 40px;
+}
+
+.container-left .expert-title>span:before {
+    content: '';
+    background: url("../../img/expert-title.png");
+    width: 14px;
+    height: 13px;
+    position: absolute;
+    top: 5px;
+    left: -22px;
+}
+
+.container-left .memberList>li {
+    margin: 20px 0;
+}
+
+.container-left .memberList>li .rank {
+    position: relative
+}
+
+.container-left .memberList>li.rankNum .rank:before {
+    content: '';
+    width: 43px;
+    height: 34px;
+    position: absolute;
+    left: 58px;
+    top: -27px;
+}
+
+.container-left .memberList>li.first .rank:before {
+    background: url("../../img/rank-first.png");
+}
+
+.container-left .memberList>li.second .rank:before {
+    background: url("../../img/rank-second.png");
+}
+
+.container-left .memberList>li.third .rank:before {
+    background: url("../../img/rank-third.png");
+}
+
+.container-left .memberList .member-pic,
+.container-left .memberList .member-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container-left .memberList .member-pic {
+    position: relative;
+}
+
+.container-left .memberList .member-pic img {
+    margin: 0 15px;
+}
+
+.container-left .memberList .member-info {
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.container-left .memberList .member-info>span {
+    display: block;
+    line-height: 30px;
+}
+
+.container-left .hotTopic {
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+/*container-left end*/
+
+
+/*container-middle start*/
+
+.container-middle {
+    margin-left: 16px;
+    width: 860px;
+    margin-top: 20px;
+}
+
+.container-middle .topic-title {
+    height: 36px;
+    line-height: 36px;
+    color: #28b2e3;
+    border-bottom: 1px solid #c5c5c5;
+    font-size: 16px;
+}
+
+.container-middle .topic-title .title-explain {
+    font-size: 14px;
+    margin-left: 20px;
+    color: #727171;
+}
+
+.container-middle .topics button {
+    background: #28b2e3;
+    text-align: center;
+    color: #fff;
+    padding: 8px 12px;
+    border: 0;
+    margin: 10px 10px 10px 0;
+}
+
+
+/*container-middle end*/
+
+
+/*container-right start*/
+
+.container-right {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.container-right img {
+    width: 302px;
+    height: 301px;
+    background: url("../../img/community-img.png");
+}
+
+.container-right a {
+    display: block;
+    color: #0073d2;
+}
+
+
+/*container-right end*/
+
+.member-pic>a img {
+    width: 84px;
+    height: 84px;
+    margin: 0 30px;
+    display: block;
+    border-radius: 100%;
+}
+
+.memberDetial {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 300px;
+    top: 80px;
+    background: #fff;
+}
+
+.memberDetial .topDetial {
+    padding: 20px 20px 10px;
+}
+
+.memberDetial .memName {
+    font-size: 14px;
+    color: #28b2e3
+}
+
+.memberDetial .leftDetial {
+    display: inline-block;
+    float: left;
+    width: 80px;
+    padding-right: 20px;
+}
+
+.memberDetial .leftDetial>img {
+    border-radius: 100%;
+    display: block;
+    height: 60px;
+    margin-right: 10px;
+    width: 60px;
+}
+
+.memberDetial .rightDetial {
+    display: inline-block;
+}
+
+.memberDetial .rightDetial .num {
+    color: #428bca;
+}
+
+.memberDetial .addCare {
+    background: #ff8247 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 3px 0;
+    text-align: center;
+    width: 60px;
+}
+
+.memberDetial .bottomDetial {
+    text-align: left;
+    border-top: 1px solid #dfdfdf;
+    margin: 0;
+    padding: 4px 20px;
+    font-size: 12px !important;
+    color: #000;
+}

@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common/init.css">
+    <link rel="stylesheet" href="../css/common/navtop.css">
+    <link rel="stylesheet" href="../css/common/footer.css">
+    <link rel="stylesheet" href="personal.css">
+
+</head>
+
+<body>
+    <div class="main ">
+        <!--顶部导航栏-->
+        <div class="topnav">
+            <div class="menu-top">
+                <div class="logo">
+                    <img src="../img/logo.png" />
+                </div>
+                <div class="name">超级合伙人</div>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="../qidian/qidian.html">奇点算股</a>
+                    </li>
+                    <li>
+                        <a href="../qida/hot/hot.html">奇答问股</a>
+                    </li>
+                    <li>
+                        <a href="../guess/guess.html">大盘猜猜乐</a>
+                    </li>
+                    <li>
+                        <a href="../live/live.html">抽奖竞猜</a>
+                    </li>
+                    <li>
+                        <a href="../aboutUs/aboutUs.html">关于我们</a>
+                    </li>
+                    <li class="active">
+                        <a href="../personal/personal.html">个人中心</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <!--左侧ul-->
+            <div class="leftUl">
+                <div class="left-top">
+                    <ul>
+                        <li>
+                            <span>账户余额（元）</span>
+                            <span class="accountNum num">851.5</span>
+                        </li>
+                        <li>
+                            <span>拥有积分</span>
+                            <span class="pointNum num">325600</span>
+                        </li>
+                    </ul>
+                    <button type="button" class="recharge">充值</button>
+                    <button type="button" class="cash">提现</button>
+                </div>
+                <!--nav ul部分-->
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#account" data-toggle="tab">
+                            <span>账户总览</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#security" data-toggle="tab">
+                            <span>安全设置</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#partner" data-toggle="tab">
+                            <span>合伙人收益</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#bank-card" data-toggle="tab">
+                            <span>银行卡管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#message" data-toggle="tab">
+                            <span>在线留言</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#prize-manage" data-toggle="tab">
+                            <span>奖品管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#point-manage" data-toggle="tab">
+                            <span>积分管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#point-detail" data-toggle="tab">
+                            <span>积分明细</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--tab container-->
+            <div id="mainTabContent" class="tab-content">
+                <!--账户总览-->
+                <div id="account" class="tab-pane plate in active">
+                    <div class="acc-top">
+                        <img class="left" src="http://hhr360oss.oss-cn-hangzhou.aliyuncs.com/6968482050105458529.gif" />
+                        <div class="acc-title left">
+                            <span class="acc-hello">上午好，<span class="acc-name">哈哈说好的</span></span>
+                            <div class="login-info">
+                                <span>上次登录时间：<span class="login-time">2017-05-03 08:36:50</span></span>
+                                <button>退出</button>
+                            </div>
+                        </div>
+                        <div class="secury-level left">
+                            <span>安全等级</span>
+                            <div class="gradient">
+                                <!--[if lte IE 9]> 
+                                <div class="progress-bar progress-bar-level" role="progressbar"
+		                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+		                                style="width: 80%;">
+	                            </div>
+                                 <![endif]-->
+                            </div>
+                            <span class="acc-level">极高</span>
+                        </div>
+                        <div class="invite left">
+                            <span>邀请码：</span><span class="inviteNum">3543541357</span>
+                        </div>
+                    </div>
+                    <div class="tab-container">
+                        <div class="con-head">
+                            <span>资金明细</span>
+                            <div class="extra">
+                                <span>本页收入<span class="income-num num">4</span>笔，共<span class="income-money num">8.61</span>元；支出<span class="pay-num num">1</span>笔，共<span class="pay-money num">8.00</span>元</span>
+                            </div>
+                            <button class="right">查询</button>
+                            <select class="flag right" name="flag">
+                                <option value="">时间</option>
+                                <option value="1" >近一个星期</option>
+                                <option value="2" >近一个月</option>
+                                <option value="3">近一年</option>
+                            </select>
+                            <select class="dictionaryId right" name="dictionaryId">
+                                <option value="">全部明细</option>
+                                <option value="1" >近一个星期近一个星期</option>
+                                <option value="2" >近一个月</option>
+                                <option value="3">近一年</option>        
+                            </select>
+                        </div>
+                        <div class="con-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            时间
+                                        </th>
+                                        <th>
+                                            类型
+                                        </th>
+                                        <th>
+                                            收入(元)
+                                        </th>
+                                        <th>
+                                            支出(元)
+                                        </th>
+                                        <th>
+                                            余额(元)
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            2017-03-09 09:36
+                                        </td>
+                                        <td>
+                                            兑换积分支付
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2017-03-09 09:36
+                                        </td>
+                                        <td>
+                                            兑换积分支付
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2017-03-09 09:36
+                                        </td>
+                                        <td>
+                                            兑换积分支付
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2017-03-09 09:36
+                                        </td>
+                                        <td>
+                                            兑换积分支付
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2017-03-09 09:36
+                                        </td>
+                                        <td>
+                                            兑换积分支付
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                        <td>
+                                            0.00
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                            <div class="pagDiv">
+                                <div class="pagination" id="account-pag"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--安全设置-->
+                <div id="security" class="tab-pane plate">
+                    <div class="tab-container">
+                        <div class="con-head">
+                            <span>安全设置</span>
+                        </div>
+                        <div class="con-body">
+                            <ul>
+                                <li class="identify safe">
+                                    <h2>实名认证</h2><span>42************03</span>
+                                    <button>认证</button>
+                                </li>
+                                <li class="bind-tel unsafe">
+                                    <h2>绑定手机</h2><span>137****2547</span>
+                                    <button>未绑定</button>
+                                </li>
+                                <li class="safe-email unsafe">
+                                    <h2>安全邮箱</h2><span>未绑定</span>
+                                    <button>未绑定</button>
+                                </li>
+                                <li class="login-pswd safe">
+                                    <h2>登录密码</h2><span>已设置</span>
+                                    <button>已设置</button>
+                                </li>
+                                <li class="cash-pswd safe">
+                                    <h2>提款密码</h2><span>已设置</span>
+                                    <button class="forget">忘记密码</button>
+                                    <button class="change">修改</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--合伙人受益-->
+                <div id="partner" class="tab-pane plate ">
+                    <img src="../img/developing.jpg" />
+                </div>
+                <!--银行卡管理-->
+                <div id="bank-card" class="tab-pane plate ">
+                    <div class="tab-container">
+                        <div class="con-head">
+                            <span>银行卡管理</span>
+                        </div>
+                        <div class="con-body">
+                            <ul>
+                                <li class="card">
+                                    <span class="bank-name">招商银行</span>
+                                    <span class="bank-num">621*************5248</span>
+                                    <a class="bank-change">修改银行卡</a>
+                                    <a class="bank-unband">解绑银行卡</a>
+                                </li>
+                                <li class="card">
+                                    <span class="bank-name">招商银行</span>
+                                    <span class="bank-num">621*************5248</span>
+                                    <a class="bank-change">修改银行卡</a>
+                                    <a class="bank-unband">解绑银行卡</a>
+                                </li>
+                                <li class="card">
+                                    <span class="bank-name">招商银行</span>
+                                    <span class="bank-num">621*************5248</span>
+                                    <a class="bank-change">修改银行卡</a>
+                                    <a class="bank-unband">解绑银行卡</a>
+                                </li>
+                                <li class="card">
+                                    <span class="bank-name">招商银行</span>
+                                    <span class="bank-num">621*************5248</span>
+                                    <a class="bank-change">修改银行卡</a>
+                                    <a class="bank-unband">解绑银行卡</a>
+                                </li>
+                                <li class="card">
+                                    <span class="bank-name">招商银行</span>
+                                    <span class="bank-num">621*************5248</span>
+                                    <a class="bank-change">修改银行卡</a>
+                                    <a class="bank-unband">解绑银行卡</a>
+                                </li>
+                                <li class="addCard">
+                                    <a>+添加银行卡</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-info">
+                            <div class="info-title">
+                                <span>添加银行卡</span>
+                            </div>
+                            <div class="info-body">
+                                <form class="cardForm">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    开户名：
+                                                </th>
+                                                <td>
+                                                    <span class="accountName">hello</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    银行卡号：
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="bankNum" placeholder="请输入银行卡卡号">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    确认卡号：
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="confirmNUm" placeholder="请确认银行卡卡号">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    开户银行：
+                                                </th>
+                                                <td>
+                                                    <!--<span class="red">请选择开户银行</span>-->
+                                                    <select class="account-bank">
+                                                        <option>
+                                                            请选择银行
+                                                        </option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr class="tip">
+                                                <th>
+                                                </th>
+                                                <td>
+                                                    <span class="red">请选择开户银行</span>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    开户地址：
+                                                </th>
+                                                <td>
+                                                    <select class="provinces">
+                                                        <option>
+                                                            请选择省份
+                                                        </option>
+                                                    </select>
+                                                    <select class="city">
+                                                        <option>
+                                                            请选择城市
+                                                        </option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    开户支行：
+                                                </th>
+                                                <td>
+                                                    <input type="text" placeholder="请输入支行（必填）">
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </form>
+                                <div class="info-explain">
+                                    <span>例如：张江支行</span>
+                                    <span>如果你不确定或忘记开户行，请直接电话向银行咨询</span>
+                                    <div class="buttons">
+                                        <button class="save">保存</button>
+                                        <button class="cancle">取消</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--在线留言-->
+                <div id="message" class="tab-pane plate">
+                    <div class="tab-container">
+                        <div class="con-head">
+                            <span>在线留言</span>
+                        </div>
+                        <div class="con-body">
+                            <div class="textareaTitle">
+                                <span>类型：</span>
+                                <select class="type" name="type">
+                                <option value="">请选择浏览类型</option>
+                                <option value="1" >App</option>
+                                <option value="2" >网站</option>
+                                <option value="3">投诉建议</option>
+                                <option value="4" >其他反馈</option>
+                            </select>
+                            </div>
+                            <div class="textareaInput">
+                                <span>内容：</span>
+                                <textarea class="messageInput" placeholder="请输入您的留言内容"></textarea>
+                            </div>
+                            <button>添加</button>
+                        </div>
+                    </div>
+                    <div class="messageResult">
+                        <ul>
+                            <li>
+                                <div class="result-title">
+                                    <span class="result-type left">投诉建议</span><span class="result-date right">2017-05-09</span>
+                                </div>
+                                <div class="result-con">
+                                    <span>内容</span>
+                                    <p>hello,123234</p>
+                                </div>
+                                <div class="result-reply">
+                                    <span>回复</span>
+                                    <p class="notReply">未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复未回复</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="result-title">
+                                    <span class="result-type left">投诉建议</span><span class="result-date right">2017-05-09</span>
+                                </div>
+                                <div class="result-con">
+                                    <span>内容</span>
+                                    <p>hello,123234hello,123234hello,123234hello,123234hello,123234hello,123234hello,123234hello,123234hello,123234hello,123234hello,123234hello,123234</p>
+                                </div>
+                                <div class="result-reply">
+                                    <span>回复</span>
+                                    <p class="notReply">未回复</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="result-title">
+                                    <span class="result-type left">投诉建议</span><span class="result-date right">2017-05-09</span>
+                                </div>
+                                <div class="result-con">
+                                    <span>内容</span>
+                                    <p>hello,123234</p>
+                                </div>
+                                <div class="result-reply">
+                                    <span>回复</span>
+                                    <p class="notReply">未回复</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!--奖品管理-->
+                <div id="prize-manage" class="tab-pane plate ">
+                    <div class="tab-container">
+                        <div class="con-head">
+                            <span>奖品管理</span>
+                        </div>
+                        <div class="con-body">
+                            <table>
+                                <col width="5%">
+                                <col width="20%">
+                                <col width="45%">
+                                <col width="20%">
+                                <col width="10%">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <input type="checkbox" />
+                                        </th>
+                                        <th>
+                                            中奖时间
+                                        </th>
+                                        <th>
+                                            奖品
+                                        </th>
+                                        <th>
+                                            状态
+                                        </th>
+                                        <th>
+                                            <button>一键领取</button>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="prize-name">
+                                            我买网购物卡500元
+                                        </td>
+                                        <td>
+                                            联系客服领取奖品
+                                        </td>
+                                        <td>
+                                            <button class="receive">领取</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="prize-name">
+                                            我买网购物卡500元
+                                        </td>
+                                        <td>
+                                            联系客服领取奖品
+                                        </td>
+                                        <td>
+                                            <button class="receive">领取</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="prize-name">
+                                            我买网购物卡500元
+                                        </td>
+                                        <td>
+                                            联系客服领取奖品
+                                        </td>
+                                        <td>
+                                            <button>领取</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="prize-name">
+                                            我买网购物卡500元
+                                        </td>
+                                        <td>
+                                            已领取
+                                        </td>
+                                        <td>
+                                            <button class="received " disabled="disabled">已领取</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="prize-name">
+                                            我买网购物卡500元
+                                        </td>
+                                        <td>
+                                            已领取
+                                        </td>
+                                        <td>
+                                            <button class="received" disabled="disabled">已领取</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="prize-name">
+                                            我买网购物卡500元
+                                        </td>
+                                        <td>
+                                            联系客服领取奖品
+                                        </td>
+                                        <td>
+                                            <button class="receive">领取</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="prize-name">
+                                            我买网购物卡500元
+                                        </td>
+                                        <td>
+                                            联系客服领取奖品
+                                        </td>
+                                        <td>
+                                            <button class="receive">领取</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="prize-name">
+                                            我买网购物卡500元
+                                        </td>
+                                        <td>
+                                            联系客服领取奖品
+                                        </td>
+                                        <td>
+                                            <button class="receive">领取</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="prize-name">
+                                            我买网购物卡500元我买网购物卡500元我买网购物卡500元我买网购物卡500元我买网购物卡500元我买网购物卡500元我买网购物卡500元
+                                        </td>
+                                        <td>
+                                            联系客服领取奖品
+                                        </td>
+                                        <td>
+                                            <button class="receive">领取</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" />
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="prize-name">
+                                            我买网购物卡500元
+                                        </td>
+                                        <td>
+                                            联系客服领取奖品
+                                        </td>
+                                        <td>
+                                            <button class="receive">领取</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagDiv">
+                                <div class="pagination" id="prize-manage-pag"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--积分管理-->
+                <div id="point-manage" class="tab-pane plate">
+                    <div class="tab-container">
+                        <div class="con-head">
+                            <span>积分管理</span>
+                        </div>
+                        <div class="con-body">
+                            <input class="userName" placeholder="请输入要赠送的用户名" />
+                            <input class="pointNum" placeholder="请输入积分" />
+                            <div class="sendPoint">
+                                <span>可赠送的积分为：<span class="availablePoint num">990</span></span>
+                                <button>赠送积分</button>
+                            </div>
+                        </div>
+                        <div class="con-head">
+                            <span>积分兑换</span>
+                        </div>
+                        <div class="con-body">
+                            <input class="moneyNum" placeholder="请输入金额" />
+                            <div class="exchangePoint">
+                                <span>可兑换的金额为：<span class="exchangeablePoint num">950</span></span>
+                                <button>兑换积分</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--积分明细-->
+                <div id="point-detail" class="tab-pane plate ">
+                    <div class="tab-container">
+                        <div class="con-head">
+                            <span>积分明细</span>
+                        </div>
+                        <div class="con-body">
+                            <table>
+                                <col width="5%">
+                                <col width="20%">
+                                <col width="30%">
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="15%">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            序号
+                                        </th>
+                                        <th>
+                                            时间
+                                        </th>
+                                        <th>
+                                            详情
+                                        </th>
+                                        <th>
+                                            积分
+                                        </th>
+                                        <th>
+                                            金额
+                                        </th>
+                                        <th>
+                                            总积分
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="detail-name">
+                                            转盘中奖领取1,000.00积分
+                                        </td>
+                                        <td>
+                                            +1000.00
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                        <td>
+                                            1,933,099.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="detail-name">
+                                            转盘中奖领取1,000.00积分
+                                        </td>
+                                        <td>
+                                            +1000.00
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                        <td>
+                                            1,933,099.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            3
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="detail-name">
+                                            转盘中奖领取1,000.00积分
+                                        </td>
+                                        <td>
+                                            +1000.00
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                        <td>
+                                            1,933,099.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            4
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="detail-name">
+                                            转盘中奖领取1,000.00积分
+                                        </td>
+                                        <td>
+                                            +1000.00
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                        <td>
+                                            1,933,099.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            5
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="detail-name">
+                                            转盘中奖领取1,000.00积分
+                                        </td>
+                                        <td>
+                                            +1000.00
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                        <td>
+                                            1,933,099.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            6
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="detail-name">
+                                            转盘中奖领取1,000.00积分
+                                        </td>
+                                        <td>
+                                            +1000.00
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                        <td>
+                                            1,933,099.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            7
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="detail-name">
+                                            转盘中奖领取1,000.00积分
+                                        </td>
+                                        <td>
+                                            +1000.00
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                        <td>
+                                            1,933,099.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            8
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="detail-name">
+                                            转盘中奖领取1,000.00积分
+                                        </td>
+                                        <td>
+                                            +1000.00
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                        <td>
+                                            1,933,099.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            9
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="detail-name">
+                                            转盘中奖领取1,000.00积分
+                                        </td>
+                                        <td>
+                                            +1000.00
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                        <td>
+                                            1,933,099.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            10
+                                        </td>
+                                        <td>
+                                            2017-03-09 12:54:29
+                                        </td>
+                                        <td class="detail-name">
+                                            转盘中奖领取1,000.00积分
+                                        </td>
+                                        <td>
+                                            +1000.00
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                        <td>
+                                            1,933,099.00
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagDiv">
+                                <div class="pagination" id="point-detail-pag"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--底部-->
+        <div class="footer">
+            <div class="footer-con">
+                <div class="footer-sec left">
+                    <ul>
+                        <li><a href="">公司简介</a></li>
+                        <li><a href="">帮助中心</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">保障与协议</a></li>
+                    </ul>
+                    <div class="companyIntr">
+                        <p>版权所有&copy;超级合伙人 Copyright Reserved &nbsp;&nbsp;2014-2016 &nbsp;&nbsp;<a target="_blank" href="http://www.miitbeian.gov.cn">沪ICP备15014727号-1</a></p>
+                        <p>小合网络科技（上海）有限公司&nbsp;&nbsp;<a target="_blank" href="http://www.miitbeian.gov.cn">沪ICP备15014727号-1</a></p>
+                        <p>地址：北京市海淀区高粱桥斜街28号</p>
+                    </div>
+
+                </div>
+                <div class="footer-sec middle">
+                    <img src="../img/erweima.png" />
+                    <span>扫码关注手机微信号</span>
+                </div>
+                <div class="footer-sec right">
+                    <div class="customInfo">
+                        <p class="tele">客服热线（服务时间09:00-18:00）</p>
+                        <p class="number">010-53320537</p>
+                        <p>客服邮箱：help@hhr360.com</p>
+                        <div class="thanks">
+                            <span class="special">特别鸣谢：</span>
+                            <span class="names"><p>阿金；晦聪禅师</p><p>★WYLYF☆；骑士八律</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.pagination.js"></script>
+<script type="text/javascript" src="../js/common/footer.js"></script>
+<script type="text/javascript" src="personal.js"></script>
+
+</html>

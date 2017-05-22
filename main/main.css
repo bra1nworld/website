@@ -1,0 +1,1048 @@
+#sections {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background-color: #fff;
+}
+
+.section {
+    overflow: hidden;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*common  start*/
+
+body {
+    overflow: hidden;
+    font-family: "微软雅黑"
+}
+
+#sections .title {
+    font-size: 108px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.95
+}
+
+#sections .title-explain {
+    opacity: 0.8
+}
+
+#sections .title-explain {
+    font-size: 38px;
+    color: #fff;
+    font-weight: 100;
+    margin-top: 35px;
+}
+
+
+/*top  start*/
+
+.nav-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    z-index: 100;
+}
+
+.menu-top {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+}
+
+.menu-top .logo {
+    float: left;
+    margin-top: 12px;
+}
+
+.menu-top .name {
+    float: left;
+    color: #fff;
+    font-size: 35px;
+    margin-top: 9px;
+    margin-left: 20px;
+}
+
+.menu-top .nav-menu {
+    float: right;
+    margin-right: 30px;
+}
+
+.menu-top .nav-menu li {
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.menu-top .nav-menu li a {
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*top  end*/
+
+
+/*common  end*/
+
+
+/*#homeBackground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#homeCanvas {
+    background-image: url('../img/mainImg/homeBackground.jpg');
+}*/
+
+
+/*section1  start*/
+
+#section1 {
+    background-image: url('../img/mainImg/homeBackground1.jpg');
+}
+
+.particle-grid {
+    position: absolute;
+    z-index: 1
+}
+
+#section1 .center {
+    position: absolute;
+    width: 100%;
+    margin-top: -167px;
+    z-index: 10;
+}
+
+#section1 .btn {
+    display: block;
+    width: 334px;
+    height: 74px;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-image: url('../img/mainImg/section1-btn.png');
+    text-decoration: none;
+}
+
+#section1 .btn span {
+    display: block;
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 13px;
+}
+
+
+/*section1  end*/
+
+
+/*section2  start*/
+
+#section2 {
+    z-index: 1;
+    background-image: url('../img/mainImg/background2.jpg');
+}
+
+#section2 canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#section2 .fp-tableCell {
+    position: relative;
+    z-index: 1;
+}
+
+#section2 .center {
+    width: 1200px;
+    margin: 0 auto;
+    z-index: 10;
+    position: relative;
+}
+
+#section2 .left {
+    display: block;
+    float: left;
+    text-align: left;
+    margin-left: 66px;
+}
+
+#section2 .left .title {
+    font-size: 92px;
+}
+
+#section2 .left .explain1 {
+    font-size: 46px;
+}
+
+#section2 .left .explain2 {
+    font-size: 32px;
+}
+
+#section2 .right {
+    display: block;
+    float: right;
+    position: absolute;
+    left: 600px;
+    top: 200px;
+}
+
+#section2 .btn {
+    display: block;
+    width: 285px;
+    height: 80px;
+    text-align: center;
+    margin-top: 45px;
+    background-image: url('../img/mainImg/section2-btn.png');
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#section2 .btn span {
+    display: block;
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 13px;
+}
+
+#section2 .right .imgs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#section2 .right img {
+    position: absolute;
+}
+
+#section2 .right .img0 {
+    left: 118px;
+    top: -136px;
+}
+
+#section2 .right .img1 {
+    left: 203px;
+    top: 242px;
+    animation: section2Img 3s linear infinite;
+    -o-animation: section2Img 3s linear infinite;
+    -moz-animation: section2Img 3s linear infinite;
+    -webkit-animation: section2Img 3s linear infinite;
+}
+
+#section2 .right .img2 {
+    left: 276px;
+    top: 221px;
+    animation: section2Img 3s linear 0.3s infinite;
+    -o-animation: section2Img 3s linear 0.3s infinite;
+    -moz-animation: section2Img 3s linear 0.3s infinite;
+    -webkit-animation: section2Img 3s linear 0.3s infinite;
+}
+
+#section2 .right .img3 {
+    left: 391px;
+    top: 165px;
+    animation: section2Img 3s linear 0.6s infinite;
+    -o-animation: section2Img 3s linear 0.6s infinite;
+    -moz-animation: section2Img 3s linear 0.6s infinite;
+    -webkit-animation: section2Img 3s linear 0.6s infinite;
+}
+
+#section2 .right .img4 {
+    left: 502px;
+    top: 164px;
+    animation: section2Img 3s linear 0.9s infinite;
+    -o-animation: section2Img 3s linear 0.9s infinite;
+    -moz-animation: section2Img 3s linear 0.9s infinite;
+    -webkit-animation: section2Img 3s linear 0.9s infinite;
+}
+
+#section2 .right .img5 {
+    left: 473px;
+    top: 43px;
+    animation: section2Img 3s linear 1.2s infinite;
+    -o-animation: section2Img 3s linear 1.2s infinite;
+    -moz-animation: section2Img 3s linear 1.2s infinite;
+    -webkit-animation: section2Img 3s linear 1.2s infinite;
+}
+
+#section2 .right .img6 {
+    left: 454px;
+    top: -120px;
+    animation: section2Img 3s linear 1.5s infinite;
+    -o-animation: section2Img 3s linear 1.5s infinite;
+    -moz-animation: section2Img 3s linear 1.5s infinite;
+    -webkit-animation: section2Img 3s linear 1.5s infinite;
+}
+
+#section2 .right .img7 {
+    left: 485px;
+    top: -166px;
+    animation: section2Img 3s linear 1.8s infinite;
+    -o-animation: section2Img 3s linear 1.8s infinite;
+    -moz-animation: section2Img 3s linear 1.8s infinite;
+    -webkit-animation: section2Img 3s linear 1.8s infinite;
+}
+
+#section2 .right .img8 {
+    left: 374px;
+    top: -231px;
+    animation: section2Img 3s linear 2.1s infinite;
+    -o-animation: section2Img 3s linear 2.1s infinite;
+    -moz-animation: section2Img 3s linear 2.1s infinite;
+    -webkit-animation: section2Img 3s linear 2.1s infinite;
+}
+
+#section2 .right .img9 {
+    left: 270px;
+    top: -182px;
+    animation: section2Img 3s linear 2.4s infinite;
+    -o-animation: section2Img 3s linear 2.4s infinite;
+    -moz-animation: section2Img 3s linear 2.4s infinite;
+    -webkit-animation: section2Img 3s linear 2.4s infinite;
+}
+
+#section2 .right .img10 {
+    left: 101px;
+    top: -255px;
+    animation: section2Img 3s linear 2.7s infinite;
+    -o-animation: section2Img 3s linear 2.7s infinite;
+    -moz-animation: section2Img 3s linear 2.7s infinite;
+    -webkit-animation: section2Img 3s linear 2.7s infinite;
+}
+
+#section2 .right .img11 {
+    left: 33px;
+    top: -115px;
+    animation: section2Img 3s linear 3.1s infinite;
+    -o-animation: section2Img 3s linear 3.1s infinite;
+    -moz-animation: section2Img 3s linear 3.1s infinite;
+    -webkit-animation: section2Img 3s linear 3.1s infinite;
+}
+
+@-webkit-keyframes section2Img {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -1px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(0px, -2px) rotate(-2deg);
+    }
+    30% {
+        transform: translate(1px, -1px) rotate(-1deg);
+    }
+    40% {
+        transform: translate(2px, 0px) rotate(0deg);
+    }
+    50% {
+        transform: translate(1px, 1px) rotate(1deg);
+    }
+    60% {
+        transform: translate(0px, 2px) rotate(2deg);
+    }
+    70% {
+        transform: translate(-1px, 1px) rotate(1deg);
+    }
+    80% {
+        transform: translate(-2px, 0px) rotate(0deg);
+    }
+    90% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+@-o-keyframes section2Img {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -1px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(0px, -2px) rotate(-2deg);
+    }
+    30% {
+        transform: translate(1px, -1px) rotate(-1deg);
+    }
+    40% {
+        transform: translate(2px, 0px) rotate(0deg);
+    }
+    50% {
+        transform: translate(1px, 1px) rotate(1deg);
+    }
+    60% {
+        transform: translate(0px, 2px) rotate(2deg);
+    }
+    70% {
+        transform: translate(-1px, 1px) rotate(1deg);
+    }
+    80% {
+        transform: translate(-2px, 0px) rotate(0deg);
+    }
+    90% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+@-moz-keyframes section2Img {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -1px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(0px, -2px) rotate(-2deg);
+    }
+    30% {
+        transform: translate(1px, -1px) rotate(-1deg);
+    }
+    40% {
+        transform: translate(2px, 0px) rotate(0deg);
+    }
+    50% {
+        transform: translate(1px, 1px) rotate(1deg);
+    }
+    60% {
+        transform: translate(0px, 2px) rotate(2deg);
+    }
+    70% {
+        transform: translate(-1px, 1px) rotate(1deg);
+    }
+    80% {
+        transform: translate(-2px, 0px) rotate(0deg);
+    }
+    90% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+@keyframes section2Img {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -1px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(0px, -2px) rotate(-2deg);
+    }
+    30% {
+        transform: translate(1px, -1px) rotate(-1deg);
+    }
+    40% {
+        transform: translate(2px, 0px) rotate(0deg);
+    }
+    50% {
+        transform: translate(1px, 1px) rotate(1deg);
+    }
+    60% {
+        transform: translate(0px, 2px) rotate(2deg);
+    }
+    70% {
+        transform: translate(-1px, 1px) rotate(1deg);
+    }
+    80% {
+        transform: translate(-2px, 0px) rotate(0deg);
+    }
+    90% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+
+/*section2  end*/
+
+
+/*section3  start*/
+
+#section3 {
+    background-image: url('../img/mainImg/background3.jpg');
+}
+
+#section3 .center {
+    background-image: url('../img/mainImg/section3-center.png');
+    width: 1200px;
+    height: 720px;
+    margin: 0 auto;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#section3 .imgs,
+#section3 .lines,
+#section3 .words,
+#section3 .leftLine,
+#section3 .titleBtn,
+#section3 .rects {
+    position: absolute;
+    /*top: 50%;
+    left: 50%;*/
+}
+
+#section3 .titles {
+    position: absolute;
+    top: 245px;
+    left: 670px;
+    width: 450px;
+    text-align: left;
+}
+
+#section3 .titles .title {
+    font-size: 88px;
+}
+
+#section3 .titles .title-explain {
+    font-size: 46px;
+}
+
+#section3 .titles .title-explain1 {
+    margin-top: 10px;
+}
+
+#section3 .titles .title-explain2 {
+    margin-top: 27px;
+}
+
+#section3 .titleBtn a {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    position: absolute;
+    top: 405px;
+    left: 325px;
+}
+
+#section3 .titleBtn a span {
+    position: absolute;
+    top: 35px;
+    font-size: 47px;
+    color: #b8ddfc;
+    width: 100px;
+    left: 50px;
+}
+
+#section3 .imgs img {
+    position: absolute;
+}
+
+#section3 .img1 {
+    top: 271px;
+    left: 156px;
+    animation: img 3s linear infinite;
+    -o-animation: img 3s linear infinite;
+    -moz-animation: img 3s linear infinite;
+    -webkit-animation: img 3s linear infinite;
+}
+
+#section3 .img2 {
+    top: 196px;
+    left: 216px;
+    animation: img 3s linear 1s infinite;
+    -o-animation: img 3s linear 1s infinite;
+    -moz-animation: img 3s linear 1s infinite;
+    -webkit-animation: img 3s linear 1s infinite;
+}
+
+#section3 .img3 {
+    top: 296px;
+    left: 247px;
+    animation: img 3s linear 2s infinite;
+    -o-animation: img 3s linear 2s infinite;
+    -moz-animation: img 3s linear 2s infinite;
+    -webkit-animation: img 3s linear 2s infinite;
+}
+
+@-webkit-keyframes img {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0.4
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes img {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0.4
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes img {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0.4
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes img {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0.4
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#section3 .rects ul {
+    position: absolute;
+    left: 135px;
+    top: 485px;
+    width: 140px;
+    height: 50px;
+}
+
+#section3 .rects .rect {
+    display: block;
+    float: left;
+    list-style-type: none;
+    background: #92aef2;
+    background: -webkit-linear-gradient(to right, #92aef2 0%, #8cacf3 100%);
+    background: -moz-linear-gradient(to right, #92aef2 0%, #8cacf3 100%);
+    background: -o-linear-gradient(to right, #92aef2 0%, #8cacf3 100%);
+    background: -ms-linear-gradient(to right, #92aef2 0%, #8cacf3 100%);
+    background: linear-gradient(to right, #92aef2 0%, #8cacf3 100%);
+    width: 8px;
+    margin-left: 12px;
+}
+
+#section3 .rects .rect1 {
+    height: 15px;
+    margin-top: 35px;
+    animation: rect 2s linear infinite;
+    -o-animation: rect 2s linear infinite;
+    -moz-animation: rect 2s linear infinite;
+    -webkit-animation: rect 2s linear infinite;
+}
+
+#section3 .rects .rect2 {
+    height: 20px;
+    margin-top: 30px;
+    animation: rect 2s linear 0.25s infinite;
+    -o-animation: recrectt2 2s linear 0.25s infinite;
+    -moz-animation: rect 2s linear 0.25s infinite;
+    -webkit-animation: rect 2s linear 0.25s infinite;
+}
+
+#section3 .rects .rect3 {
+    height: 25px;
+    margin-top: 25px;
+    animation: rect 2s linear 0.5s infinite;
+    -o-animation: rect 2s linear 0.5s infinite;
+    -moz-animation: rect 2s linear 0.5s infinite;
+    -webkit-animation: rect 2s linear 0.5s infinite;
+}
+
+#section3 .rects .rect4 {
+    height: 30px;
+    margin-top: 20px;
+    animation: rect 2s linear 0.75s infinite;
+    -o-animation: rect 2s linear 0.75s infinite;
+    -moz-animation: rect 2s linear 0.75s infinite;
+    -webkit-animation: rect 2s linear 0.75s infinite;
+}
+
+#section3 .rects .rect5 {
+    height: 40px;
+    margin-top: 10px;
+    animation: rect 2s linear 1s infinite;
+    -o-animation: rect 2s linear 1s infinite;
+    -moz-animation: rect 2s linear 1s infinite;
+    -webkit-animation: rect 2s linear 1s infinite;
+}
+
+#section3 .rects .rect6 {
+    height: 45px;
+    margin-top: 5px;
+    animation: rect 2s linear 1.25s infinite;
+    -o-animation: rect 2s linear 1.25s infinite;
+    -moz-animation: rect 2s linear 1.25s infinite;
+    -webkit-animation: rect 2s linear 1.25s infinite;
+}
+
+#section3 .rects .rect7 {
+    height: 50px;
+    animation: rect 2s linear 1.5s infinite;
+    -o-animation: rect 2s linear 1.5s infinite;
+    -moz-animation: rect 2s linear 1.5s infinite;
+    -webkit-animation: rect 2s linear 1.5s infinite;
+}
+
+@-webkit-keyframes rect {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes rect {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes rect {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes rect {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#section3 .lines ul {
+    position: absolute;
+    left: 950px;
+    top: 125px;
+    width: 150px;
+    height: 86px;
+    overflow: hidden;
+}
+
+#section3 .lines .line {
+    width: 4px;
+    margin-left: 20px;
+    float: left;
+    display: block;
+    background: #80a6f5;
+    background: -webkit-linear-gradient(to right, #80a6f5 0%, #76a0e9 100%);
+    background: -moz-linear-gradient(to right, #80a6f5 0%, #76a0e9 100%);
+    background: -o-linear-gradient(to right, #80a6f5 0%, #76a0e9 100%);
+    background: -ms-linear-gradient(to right, #80a6f5 0%, #76a0e9 100%);
+    background: linear-gradient(to right, #80a6f5 0%, #76a0e9 100%);
+}
+
+#section3 .lines .line1 {
+    height: 68px;
+    margin-top: 18px;
+    animation: line 1.5s linear infinite;
+    -o-animation: line 1.5s linear infinite;
+    -ms-animation: line 1.5s linear infinite;
+    -moz-animation: line 1.5s linear infinite;
+    -webkit-animation: line 1.5s linear infinite;
+}
+
+#section3 .lines .line2 {
+    height: 56px;
+    margin-top: 30px;
+    animation: line 1.5s linear 0.25s infinite;
+    -o-animation: line 1.5s linear 0.25s infinite;
+    -ms-animation: line 1.5s linear 0.25s infinite;
+    -moz-animation: line 1.5s linear 0.25s infinite;
+    -webkit-animation: line 1.5s linear 0.25s infinite;
+}
+
+#section3 .lines .line3 {
+    height: 31px;
+    margin-top: 55px;
+    animation: line 1.5s linear 0.5s infinite;
+    -o-animation: line 1.5s linear 0.5s infinite;
+    -ms-animation: line 1.5s linear 0.5s infinite;
+    -moz-animation: line 1.5s linear 0.5s infinite;
+    -webkit-animation: line 1.5s linear 0.5s infinite;
+}
+
+#section3 .lines .line4 {
+    height: 64px;
+    margin-top: 22px;
+    animation: line 1.5s linear 0.75s infinite;
+    -o-animation: line 1.5s linear 0.75s infinite;
+    -ms-animation: line 1.5s linear 0.75s infinite;
+    -moz-animation: line 1.5s linear 0.75s infinite;
+    -webkit-animation: line 1.5s linear 0.75s infinite;
+}
+
+#section3 .lines .line5 {
+    height: 86px;
+    animation: line 1.5s linear 1s infinite;
+    -o-animation: line 1.5s linear 1s infinite;
+    -ms-animation: line 1.5s linear 1s infinite;
+    -moz-animation: line 1.5s linear 1s infinite;
+    -webkit-animation: line 1.5s linear 1s infinite;
+}
+
+@-webkit-keyframes line {
+    0% {
+        -webkit-transform: translateY( 0);
+    }
+    50% {
+        -webkit-transform: translateY( 86px);
+    }
+    100% {
+        -webkit-transform: translateY( 0);
+    }
+}
+
+@-o-keyframes line {
+    0% {
+        -o-transform: translateY( 0);
+    }
+    50% {
+        -o-transform: translateY( 86px);
+    }
+    100% {
+        -o-transform: translateY( 0);
+    }
+}
+
+@-moz-keyframes line {
+    0% {
+        -moz-transform: translateY( 0);
+    }
+    50% {
+        -moz-transform: translateY(86px);
+    }
+    100% {
+        -moz-transform: translateY( 0);
+    }
+}
+
+@keyframes line {
+    0% {
+        transform: translateY( 0);
+        -ms-transform: translateY( 0);
+    }
+    50% {
+        transform: translateY(50px);
+        -ms-transform: translateY( 86px);
+    }
+    100% {
+        transform: translateY( 0);
+        -ms-transform: translateY( 0);
+    }
+}
+
+@media screen and (min-width: 1780px) {
+    #section3 .leftLine .box {
+        border-bottom: 2px solid #92aef2;
+        border-right: 2px solid #92aef2;
+        position: absolute;
+        left: -360px;
+        top: 483px;
+        width: 0px;
+        height: 0px;
+        margin-top: 50px;
+    }
+    #section3.active .leftLine .box {
+        width: 490px;
+        height: 50px;
+        margin-top: 0px;
+        -moz-transition: width 2s ease 1s, height .5s ease 3s, margin-top .5s ease 3s;
+        -o-transition: width 2s ease 1s, height .5s ease 3s, margin-top .5s ease 3s;
+        -webkit-transition: width 2s ease 1s, height .5s ease 3s, margin-top .5s ease 3s;
+        transition: width 2s ease 1s, height .5s ease 3s, margin-top .5s ease 3s
+    }
+}
+
+
+/*section3  end*/
+
+
+/*section4  start*/
+
+#section4 {
+    z-index: 1;
+    background-image: url('../img/mainImg/background4.jpg');
+}
+
+#section4 #bgCanvas {
+    position: absolute;
+    top: -157px;
+    left: 537px;
+    width: 600px;
+    height: 600px;
+    border-radius: 300px;
+}
+
+#section4 .center {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+#section4 .background {
+    position: absolute;
+    background: url('../img/mainImg/section4-bg.png') no-repeat;
+    left: 559px;
+    top: -140px;
+    width: 600px;
+    height: 600px;
+}
+
+#section4 .left {
+    display: block;
+    float: left;
+    text-align: left;
+    margin-left: 160px;
+}
+
+#section4 .left .title {
+    font-size: 80px;
+}
+
+#section4 .left .title-explain {
+    font-size: 31px;
+    margin-top: 27px;
+}
+
+#section4 .right {
+    display: block;
+    float: right;
+}
+
+#section4 .right .imgs,
+#section4 .right .titleBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#section4 .right .titleBtn {
+    cursor: pointer;
+}
+
+#section4 .right span {
+    font-family: "微软雅黑";
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 0 0 0.5em #ff6060, -0 -0 0.5em #ff6060;
+    position: absolute;
+    top: 108px;
+    left: 203px;
+    width: 70px;
+    height: 70px;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    border-radius: 35px;
+}
+
+#section4 .right img {
+    position: absolute;
+}
+
+#section4 .right .img0 {
+    position: absolute;
+    left: 193px;
+    top: 97px;
+}
+
+#section4 .right .img1 {
+    left: 43px;
+    top: -125px;
+}
+
+#section4 .right .img2 {
+    left: 380px;
+    top: -20px;
+}
+
+#section4 .right .img3 {
+    left: 126px;
+    top: 48px;
+}
+
+#section4 .right .img4 {
+    left: 20px;
+    top: 100px;
+}
+
+#section4 .right .img5 {
+    left: 369px;
+    top: 160px;
+}
+
+#section4 .right .img6 {
+    left: 94px;
+    top: 230px;
+}
+
+#section4 .right .img7 {
+    left: 354px;
+    top: 285px;
+}
+
+
+/*section4  end*/

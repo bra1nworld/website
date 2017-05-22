@@ -1,0 +1,357 @@
+/*con-left start*/
+
+.con-left,
+.con-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.con-left {
+    width: 220px;
+    padding: 30px 20px 20px 0;
+    margin-left: 30px;
+}
+
+.con-left .guide {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b0b0b0
+}
+
+.con-left .guide>a {
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 90px;
+    cursor: pointer;
+    background: #004e99 none repeat scroll 0 0;
+}
+
+.con-left .guide>a:hover {
+    text-decoration: none;
+    background: #28b2e3
+}
+
+.con-left .guide>a>span {
+    margin-right: 10px;
+}
+
+.con-left .sign {
+    padding: 10px 0;
+    font-size: 14px;
+    position: relative;
+    border-bottom: 1px solid #b0b0b0
+}
+
+.con-left .sign .signWord {
+    width: 178px;
+    margin: 10px 0;
+    color: #727171;
+}
+
+.con-left .sign>span {
+    font-size: 16px;
+}
+
+.con-left .signWord>a {
+    float: right;
+}
+
+.con-left .signInput {
+    clear: both;
+    display: none;
+}
+
+.con-left .signInput>textarea {
+    width: 180px;
+    padding: 5px;
+    border: 1px solid #dfdfdf;
+    background: #fff;
+}
+
+.con-left .signInput>button {
+    border: 1px solid #727171;
+    border-radius: 5px;
+    color: #727171;
+    display: block;
+    background: #fff;
+    font-size: 12px;
+    margin: 10px 0 0;
+    padding: 2px 5px;
+    text-align: center;
+    width: 40px;
+}
+
+.con-left .myFans {
+    padding: 10px 0;
+    border-bottom: 1px solid #b0b0b0
+}
+
+.con-left .cares {
+    padding: 10px 0;
+}
+
+.con-left .myFans,
+.con-left .cares {
+    font-size: 16px;
+}
+
+.con-left .myFans .noFans,
+.con-left .cares .noCares {
+    display: block;
+    display: none;
+    color: #727171;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.con-left .myFans>ul,
+.con-left .cares>ul {
+    margin-top: 10px;
+}
+
+.con-left .myFans>ul>li,
+.con-left .cares>ul>li {
+    display: inline-block;
+}
+
+
+/*con-left end*/
+
+
+/*con-right start*/
+
+.con-right {
+    padding-top: 30px;
+    width: 900px;
+    margin-left: 30px;
+}
+
+.con-right .infoLeft>img {
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+
+.con-right .infoRight,
+.con-right .infoLeft {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.con-right .infoRight {
+    margin-left: 10px;
+}
+
+.con-right .infoRight>span {
+    display: block;
+    height: 33px;
+    line-height: 33px;
+}
+
+.con-right .infoRight .userName {
+    color: #004f99;
+    font-size: 18px;
+}
+
+.con-right .infoRight .userPoint {
+    background: #004f99 none repeat scroll 0 0;
+    color: #fff;
+    padding: 2px 5px;
+    margin-left: 10px;
+}
+
+#question-content {
+    margin-top: 10px;
+}
+
+#question-tab>li>a {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    text-align: center;
+    color: #000000;
+}
+
+.questionInfo {
+    margin-top: 30px;
+}
+
+#question-tab>li.active>a {
+    color: #18b1e5;
+    border: 1px solid #18b1e5;
+    border-bottom-color: transparent;
+}
+
+#question-tab {
+    border-bottom: 1px solid #18b1e5;
+}
+
+#question-content .questionList>li {
+    border-bottom: 1px dashed #b0b0b0;
+    padding: 10px 0;
+}
+
+#question-content .questionList>li:last-child {
+    border-bottom: 0
+}
+
+#question-content .member-pic,
+#question-content .question-detial {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#question-content .question-detial {
+    width: 800px;
+    margin-left: 10px;
+}
+
+#question-content .question-detial>.question-title {
+    height: 40px;
+    line-height: 40px;
+}
+
+#question-content .question-title a {
+    color: #2a6496;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#question-content a:hover {
+    text-decoration: none;
+}
+
+.questionList .question-title>i {
+    display: inline-block;
+    width: 34px;
+    height: 24px;
+    background: url("../../img/money.png") no-repeat;
+    background-position: 5px 6px;
+    background-size: 80%;
+}
+
+.questionList .question-title>span {
+    color: #28b2e3;
+    display: inline-block;
+    position: relative;
+}
+
+.questionList .question-view {
+    margin: 10px 0;
+    color: #727171;
+}
+
+.questionList .question-view>ul>li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.questionList .question-bottom {
+    margin-top: 20px;
+}
+
+.questionList .question-bottom .question-stock {
+    display: inline-block;
+}
+
+.questionList .question-stock>ul>li {
+    border: 1px solid #28b2e3;
+    border-radius: 3px;
+    display: inline-block;
+    list-style-type: none;
+    margin: 2px 20px 0 0;
+    padding: 3px 15px;
+}
+
+.questionList .question-stock>ul>li a {
+    color: #28b2e3;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.questionList .question-bottom>span {
+    font-size: 12px;
+    color: #727171;
+}
+
+
+/*con-right end*/
+
+.member-pic {
+    position: relative;
+}
+
+.member-pic>a img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    display: block;
+    border-radius: 100%;
+}
+
+.memberDetial {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 300px;
+    top: 40px;
+    background: #fff;
+}
+
+.memberDetial .topDetial {
+    padding: 20px 20px 10px;
+}
+
+.memberDetial .memName {
+    font-size: 14px;
+    color: #28b2e3
+}
+
+.memberDetial .leftDetial {
+    display: inline-block;
+    float: left;
+    width: 80px;
+    padding-right: 20px;
+}
+
+.memberDetial .leftDetial>img {
+    border-radius: 100%;
+    display: block;
+    height: 60px;
+    margin-right: 10px;
+    width: 60px;
+}
+
+.memberDetial .rightDetial {
+    display: inline-block;
+}
+
+.memberDetial .rightDetial .num {
+    color: #428bca;
+}
+
+.memberDetial .addCare {
+    background: #ff8247 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 3px 0;
+    text-align: center;
+    width: 60px;
+}
+
+.memberDetial .bottomDetial {
+    text-align: left;
+    border-top: 1px solid #dfdfdf;
+    margin: 0;
+    padding: 4px 20px;
+    font-size: 12px !important;
+    color: #000;
+}

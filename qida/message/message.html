@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/common/init.css">
+    <link rel="stylesheet" href="../../css/common/navtop.css">
+    <link rel="stylesheet" href="../../css/common/footer.css">
+    <link rel="stylesheet" href="../qida.css">
+    <link rel="stylesheet" href="message.css">
+
+</head>
+
+<body>
+    <div class="main ">
+        <!--顶部导航栏-->
+        <div class="topnav">
+            <div class="menu-top">
+                <div class="logo">
+                    <img src="../../img/logo.png" />
+                </div>
+                <div class="name">超级合伙人</div>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="../../index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="../../qidian/qidian.html">奇点算股</a>
+                    </li>
+                    <li class="active">
+                        <a href="../../qida/qida.html">奇答问股</a>
+                    </li>
+                    <li>
+                        <a href="../../guess/guess.html">大盘猜猜乐</a>
+                    </li>
+                    <li>
+                        <a href="../../live/live.html">抽奖竞猜</a>
+                    </li>
+                    <li>
+                        <a href="../../aboutUs/aboutUs.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="../../personal/personal.html">个人中心</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--奇答问股导航栏-->
+        <div class="qida-vav">
+            <div class="qida-nav-area">
+                <div class="qida-van-input">
+                    <input class="search-input" />
+                </div>
+                <ul id="qidaTab">
+                    <li class=" hot ">
+                        <a href="../hot/hot.html">
+                            热点
+                        </a>
+                    </li>
+                    <li class="community ">
+                        <a href="../community/community.html">
+                            社区
+                        </a>
+                    </li>
+                    <li class="question">
+                        <a href="../question/question.html">
+                            问题
+                        </a>
+                    </li>
+                    <li class="tag">
+                        <a href="../tag/tag.html">
+                            标签
+                        </a>
+                    </li>
+                    <li class="shares">
+                        <a href="../shares/shares.html">
+                            股票
+                        </a>
+                    </li>
+                    <li class="ask">
+                        <a href="../ask/ask.html">
+                            提问
+                        </a>
+                    </li>
+                </ul>
+                <div class="personalArea">
+                    <a class="messages">
+                        <span class="glyphicon glyphicon-bell bellTop"></span>
+                    </a>
+                    <div class="informationTop messTip">
+                        <div class="inforBod" id="messageTip">
+                            <div class="inforBody-mesg">暂无最新消息</div>
+                            <div class="inforBody-dext">
+                                <a href="../message/message.html" class="defaultCol"> 查看全部消息</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="head-pic"><img src="../../img/memImg.gif" /></a>
+                    <div class="informationTop meTip">
+                        <div class="inforBod">
+                            <div class="inforBody-gz">
+                                <div class="information-tox">
+                                    <img src="../../img/memImg.gif" />
+                                </div>
+                            </div>
+                            <div class="inforBody-text">
+                                <div class="chartNa defaultCol">
+                                    <a href="../myHomepage/myHomepage.html">从未止步</a>
+                                </div>
+                                <div class="chartName-jifen smalSize">
+                                    余额：<span class="mybalancs">0.00</span>元
+                                    <a class="timony" href="../../personal/personal.html" target="_blank">兑换积分</a>
+                                </div>
+                                <div class="chartName-jifen smalSize">积分：<span class="mypoint">1,933,099.00</span></div>
+                                <div class="chartName-jifen smalSize">用户级别：<span class="mylevel"></span>专家</div>
+                            </div>
+                        </div>
+                        <div class="chartName-nav">
+                            <ul>
+                                <li><a href="../myHomepage/myHomepage.html">我的主页</a></li>
+                                <li><a href="../myHomepage/myHomepage.html">我的回答</a></li>
+                                <li><a href="../../personal/personal.html">积分明细</a></li>
+                                <li><a onclick="logout()">退出</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="mes-list">
+                <div class="con-left">
+                    <button>给关注的人发消息</button>
+                    <div class="care-member">
+                        <a>
+                            <img class="mem-pic" src="../../img/memImg.gif" />
+                            <span class="mem-name">善未易明</span>
+                        </a>
+                        <a>
+                            <img class="mem-pic" src="../../img/memImg.gif" />
+                            <span class="mem-name">善未易明</span>
+                        </a>
+                        <a>
+                            <img class="mem-pic" src="../../img/memImg.gif" />
+                            <span class="mem-name">善未易明善未易明</span>
+                        </a>
+                        <a>
+                            <img class="mem-pic" src="../../img/memImg.gif" />
+                            <span class="mem-name">善未易明</span>
+                        </a>
+                        <a>
+                            <img class="mem-pic" src="../../img/memImg.gif" />
+                            <span class="mem-name">善未易明</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="con-right">
+                    <div class="message-title">
+                        <span>私信<span class="unread">(1未读)</span></span>
+                        <div class="title-form">
+                            <select>
+                            <option value="全部">全部</option>
+                            <option value="未读" >未读</option>
+                            <option value="已读">已读</option>
+                        </select>
+                            <button class="readed">标为已读</button>
+                            <button class="delete">删除</button>
+                            <input class="checkAll" type="checkbox" />
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="li-left">
+                                <img src="../../img/memImg.gif" />
+                                <div>
+                                    <span class="name">hello</span>
+                                    <p class="message-con">测试测试测试测试测试</p>
+                                </div>
+
+                            </div>
+                            <div class="li-right">
+                                <span class="message-time">2017/05/15 11:25:34</span>
+                                <div class="operate">
+                                    <input class="message-check" type="checkbox" />
+                                    <img src="../../img/unread.png" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-left">
+                                <img src="../../img/memImg.gif" />
+                                <div>
+                                    <span class="name">hello</span>
+                                    <p class="message-con">测试测试测试测试测试</p>
+                                </div>
+
+                            </div>
+                            <div class="li-right">
+                                <span class="message-time">2017/05/15 11:25:34</span>
+                                <div class="operate">
+                                    <input class="message-check" type="checkbox" />
+                                    <img src="../../img/unread.png" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-left">
+                                <img src="../../img/memImg.gif" />
+                                <div>
+                                    <span class="name">hello</span>
+                                    <p class="message-con">测试测试测试测试测试</p>
+                                </div>
+
+                            </div>
+                            <div class="li-right">
+                                <span class="message-time">2017/05/15 11:25:34</span>
+                                <div class="operate">
+                                    <input class="message-check" type="checkbox" />
+                                    <img src="../../img/unread.png" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-left">
+                                <img src="../../img/memImg.gif" />
+                                <div>
+                                    <span class="name">hello</span>
+                                    <p class="message-con">测试测试测试测试测试</p>
+                                </div>
+
+                            </div>
+                            <div class="li-right">
+                                <span class="message-time">2017/05/15 11:25:34</span>
+                                <div class="operate">
+                                    <input class="message-check" type="checkbox" />
+                                    <img src="../../img/unread.png" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-left">
+                                <img src="../../img/memImg.gif" />
+                                <div>
+                                    <span class="name">hello</span>
+                                    <p class="message-con">测试测试测试测试测试</p>
+                                </div>
+
+                            </div>
+                            <div class="li-right">
+                                <span class="message-time">2017/05/15 11:25:34</span>
+                                <div class="operate">
+                                    <input class="message-check" type="checkbox" />
+                                    <img src="../../img/unread.png" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-left">
+                                <img src="../../img/memImg.gif" />
+                                <div>
+                                    <span class="name">hello</span>
+                                    <p class="message-con">测试测试测试测试测试</p>
+                                </div>
+
+                            </div>
+                            <div class="li-right">
+                                <span class="message-time">2017/05/15 11:25:34</span>
+                                <div class="operate">
+                                    <input class="message-check" type="checkbox" />
+                                    <img src="../../img/unread.png" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-left">
+                                <img src="../../img/memImg.gif" />
+                                <div>
+                                    <span class="name">hello</span>
+                                    <p class="message-con">测试测试测试测试测试</p>
+                                </div>
+
+                            </div>
+                            <div class="li-right">
+                                <span class="message-time">2017/05/15 11:25:34</span>
+                                <div class="operate">
+                                    <input class="message-check" type="checkbox" />
+                                    <img src="../../img/unread.png" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-left">
+                                <img src="../../img/memImg.gif" />
+                                <div>
+                                    <span class="name">hello</span>
+                                    <p class="message-con">测试测试测试测试测试</p>
+                                </div>
+
+                            </div>
+                            <div class="li-right">
+                                <span class="message-time">2017/05/15 11:25:34</span>
+                                <div class="operate">
+                                    <input class="message-check" type="checkbox" />
+                                    <img src="../../img/unread.png" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-left">
+                                <img src="../../img/memImg.gif" />
+                                <div>
+                                    <span class="name">hello</span>
+                                    <p class="message-con">测试测试测试测试测试</p>
+                                </div>
+
+                            </div>
+                            <div class="li-right">
+                                <span class="message-time">2017/05/15 11:25:34</span>
+                                <div class="operate">
+                                    <input class="message-check" type="checkbox" />
+                                    <img src="../../img/unread.png" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-left">
+                                <img src="../../img/memImg.gif" />
+                                <div>
+                                    <span class="name">hello</span>
+                                    <p class="message-con">测试测试测试测试测试</p>
+                                </div>
+
+                            </div>
+                            <div class="li-right">
+                                <span class="message-time">2017/05/15 11:25:34</span>
+                                <div class="operate">
+                                    <input class="message-check" type="checkbox" />
+                                    <img src="../../img/unread.png" />
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pagDiv">
+                        <div class="pagination" id="mes-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-mes">
+                <div class="con-left">
+                    <button>返回我的消息列表</button>
+                </div>
+                <div class="con-right">
+                    <ul>
+                        <li>
+                            <div class="li-left">
+                                <img src="../../img/memImg.gif" />
+                                <div>
+                                    <span class="name">hello</span>
+                                    <p class="message-con">测试测试测试测试测试</p>
+                                </div>
+
+                            </div>
+                            <div class="li-right">
+                                <span class="message-time">2017/05/15 11:25:34</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <textarea class="send-textarea" rows="5" cols="" placeholder="请输入您要发送的内容，限制200字以内"></textarea>
+                    <div class="send-btnBody">
+                        <button class="send-btn send-sure" id="sendSub" title="发送">发送</button>
+                        <button class="send-btn send-qx" id="sendCan" title="取消">取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="send-mes">
+                <div class="con-left">
+                    <button>返回我的消息列表</button>
+                </div>
+                <div class="con-right">
+                    <img src="" />
+                    <div class="send-title">
+                        <span>给<span class="care-name">1233211234567</span>写消息：</span>
+                    </div>
+
+                    <textarea class="send-textarea" rows="5" cols="" placeholder="请输入您要发送的内容，限制200字以内"></textarea>
+                    <div class="send-btnBody">
+                        <button class="send-btn send-sure" id="sendSub" title="发送">发送</button>
+                        <button class="send-btn send-qx" id="sendCan" title="取消">取消</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer ">
+            <div class="footer-con ">
+                <div class="footer-sec left ">
+                    <ul>
+                        <li><a href=" ">公司简介</a></li>
+                        <li><a href=" ">帮助中心</a></li>
+                        <li><a href=" ">常见问题</a></li>
+                        <li><a href=" ">联系我们</a></li>
+                        <li><a href=" ">保障与协议</a></li>
+                    </ul>
+                    <div class="companyIntr ">
+                        <p>版权所有&copy;超级合伙人 Copyright Reserved &nbsp;&nbsp;2014-2016 &nbsp;&nbsp;<a target="_blank " href="http://www.miitbeian.gov.cn ">沪ICP备15014727号-1</a></p>
+                        <p>小合网络科技（上海）有限公司&nbsp;&nbsp;<a target="_blank " href="http://www.miitbeian.gov.cn ">沪ICP备15014727号-1</a></p>
+                        <p>地址：北京市海淀区高粱桥斜街28号</p>
+                    </div>
+
+                </div>
+                <div class="footer-sec middle ">
+                    <img src="../../img/erweima.png " />
+                    <span>扫码关注手机微信号</span>
+                </div>
+                <div class="footer-sec right ">
+                    <div class="customInfo ">
+                        <p class="tele ">客服热线（服务时间09:00-18:00）</p>
+                        <p class="number ">010-53320537</p>
+                        <p>客服邮箱：help@hhr360.com</p>
+                        <div class="thanks ">
+                            <span class="special ">特别鸣谢：</span>
+                            <span class="names "><p>阿金；晦聪禅师</p><p>★WYLYF☆；骑士八律</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript " src="../../js/jquery-1.11.3.min.js "></script>
+<script type="text/javascript" src="../../js/jquery.pagination.js"></script>
+<script type="text/javascript " src="../../js/common/footer.js "></script>
+<script type="text/javascript " src="../qida.js"></script>
+<script type="text/javascript " src="message.js "></script>
+
+</html>

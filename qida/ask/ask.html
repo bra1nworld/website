@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/common/init.css">
+    <link rel="stylesheet" href="../../css/common/navtop.css">
+    <link rel="stylesheet" href="../../css/common/footer.css">
+    <link rel="stylesheet" href="../uploadify.css">
+    <link rel="stylesheet" href="../qida.css">
+    <link rel="stylesheet" href="ask.css">
+
+</head>
+
+<body>
+    <div class="main ">
+        <!--顶部导航栏-->
+        <div class="topnav">
+            <div class="menu-top">
+                <div class="logo">
+                    <img src="../../img/logo.png" />
+                </div>
+                <div class="name">超级合伙人</div>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="../../index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="../../qidian/qidian.html">奇点算股</a>
+                    </li>
+                    <li class="active">
+                        <a href="../../qida/qida.html">奇答问股</a>
+                    </li>
+                    <li>
+                        <a href="../../guess/guess.html">大盘猜猜乐</a>
+                    </li>
+                    <li>
+                        <a href="../../live/live.html">抽奖竞猜</a>
+                    </li>
+                    <li>
+                        <a href="../../aboutUs/aboutUs.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="../../personal/personal.html">个人中心</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--奇答问股导航栏-->
+        <div class="qida-vav">
+            <div class="qida-nav-area">
+                <div class="qida-van-input">
+                    <input class="search-input" />
+                </div>
+                <ul id="qidaTab">
+                    <li class=" hot ">
+                        <a href="../hot/hot.html">
+                            热点
+                        </a>
+                    </li>
+                    <li class="community ">
+                        <a href="../community/community.html">
+                            社区
+                        </a>
+                    </li>
+                    <li class="question">
+                        <a href="../question/question.html">
+                            问题
+                        </a>
+                    </li>
+                    <li class="tag ">
+                        <a href="../tag/tag.html">
+                            标签
+                        </a>
+                    </li>
+                    <li class="shares ">
+                        <a href="../shares/shares.html">
+                            股票
+                        </a>
+                    </li>
+                    <li class="ask active">
+                        <a href="../ask/ask.html">
+                            提问
+                        </a>
+                    </li>
+                </ul>
+                <div class="personalArea">
+                    <a class="messages">
+                        <span class="glyphicon glyphicon-bell bellTop"></span>
+                    </a>
+                    <div class="informationTop messTip">
+                        <div class="inforBod" id="messageTip">
+                            <div class="inforBody-mesg">暂无最新消息</div>
+                            <div class="inforBody-dext">
+                                <a href="../message/message.html" class="defaultCol"> 查看全部消息</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="head-pic"><img src="../../img/memImg.gif" /></a>
+                    <div class="informationTop meTip">
+                        <div class="inforBod">
+                            <div class="inforBody-gz">
+                                <div class="information-tox">
+                                    <img src="../../img/memImg.gif" />
+                                </div>
+                            </div>
+                            <div class="inforBody-text">
+                                <div class="chartNa defaultCol">
+                                    <a href="../myHomepage/myHomepage.html">从未止步</a>
+                                </div>
+                                <div class="chartName-jifen smalSize">
+                                    余额：<span class="mybalancs">0.00</span>元
+                                    <a class="timony" href="../../personal/personal.html" target="_blank">兑换积分</a>
+                                </div>
+                                <div class="chartName-jifen smalSize">积分：<span class="mypoint">1,933,099.00</span></div>
+                                <div class="chartName-jifen smalSize">用户级别：<span class="mylevel"></span>专家</div>
+                            </div>
+                        </div>
+                        <div class="chartName-nav">
+                            <ul>
+                                <li><a href="../myHomepage/myHomepage.html">我的主页</a></li>
+                                <li><a href="../myHomepage/myHomepage.html">我的回答</a></li>
+                                <li><a href="../../personal/personal.html">积分明细</a></li>
+                                <li><a onclick="logout()">退出</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="container bodyHget">
+                <form action="" method="post">
+                    <div class="askTit">
+                        <p>请用一句话描述你的问题，45字以内</p>
+                        <input type="text" class="askTit-input" />
+                    </div>
+                    <!-- 添加股票 -->
+                    <div class="askStock">
+                        <p>股票代码</p>
+                        <div class="askStock-content">
+                            <ul class="hotTagsts" id="addStc">
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                        <span class="addStock">添加股票：</span>
+                        <input type="text" autocomplete="off" name="stockInfo" id="stockCode" class="askStock-input sercInput" />
+                    </div>
+                    <!-- editor -->
+                    <div class="editorBody clear">
+                        <p>补充问题</p>
+                        <div class="editor">
+                            <!-- <script id="editor" type="text/plain" style="width:700px;height:300px;"></script> -->
+                            <textarea id="editor" name="editor" style="width: 700px; height: 300px;"></textarea>
+                        </div>
+                    </div>
+                    <div>提问图片：</div>
+                    <input type="file" name="imgFile" id="uploadImg1" />
+                    <div class="form quali_img" id="div1" style="display: none;">
+                        <span class="sctp" style="margin-left: 116px">
+	   				<img style="margin-top: -15px" id="picShow1" src="" width="320" height="180"></span>
+                        <input type="hidden" name="imageUrl" id="picValue1" value="" />
+                        <div id="imgQueue1" style="position: absolute;margin-left: 65px"></div>
+                    </div>
+                    <!-- 提问服务 -->
+                    <div class="askService">
+                        <div class="askService-tit">提问服务：</div>
+                        <div class="askService-info">
+                            <div class="checkbox mesgeServ">
+                                <div class="checkbox-txt">
+                                    <div class="checkbox-txtOne">收到答案时短信通知<span>1387651464</span></div>
+                                </div>
+                            </div>
+                            <div class="checkbox xuans">
+                                <div class="checkbox-txtOne">答题悬赏
+                                    <div class="selectBody">
+                                        <i class="mon"></i>
+                                        <select class="form-control">
+                                                <option value="0">请选择悬赏的积分</option>
+                                                <option value="500">500</option>
+                                                <option value="1000">1000</option>
+                                                <option value="2000">2000</option>
+                                                <option value="3000">3000</option>
+                                                <option value="5000">5000</option>
+                                                </select>
+                                    </div>
+                                </div>
+                                <div class="checkbox-txtMony">您的财富值：<span>19887.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 问题分类 -->
+                    <div class="askStock">
+                        <p>问题分类</p>
+                        <div class="askStock-content">
+                            <ul class="hotTagsts" id="addTag">
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="addStocksDiv">
+                            <input type="text" name="tags" class="askStock-input" />
+                            <a href="javascript:void(0);" class="addStocks" id="createTags">创建标签</a>
+                        </div>
+                        <div class="askStock-hotTag">
+                            <div class="askStock-hotTagTit">
+                                添加热门标签：
+                            </div>
+                            <div class="askStock-hotTagList">
+                                <ul class="hotTagsts">
+                                    <li>股票<span class="redClor">+</span></li>
+                                    <li>换手率<span class="redClor">+</span></li>
+                                    <li>散户<span class="redClor">+</span></li>
+                                    <li>次新股<span class="redClor">+</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="tijiao clear" id="submitQue">提交</a>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer ">
+            <div class="footer-con ">
+                <div class="footer-sec left ">
+                    <ul>
+                        <li><a href=" ">公司简介</a></li>
+                        <li><a href=" ">帮助中心</a></li>
+                        <li><a href=" ">常见问题</a></li>
+                        <li><a href=" ">联系我们</a></li>
+                        <li><a href=" ">保障与协议</a></li>
+                    </ul>
+                    <div class="companyIntr ">
+                        <p>版权所有&copy;超级合伙人 Copyright Reserved &nbsp;&nbsp;2014-2016 &nbsp;&nbsp;<a target="_blank " href="http://www.miitbeian.gov.cn ">沪ICP备15014727号-1</a></p>
+                        <p>小合网络科技（上海）有限公司&nbsp;&nbsp;<a target="_blank " href="http://www.miitbeian.gov.cn ">沪ICP备15014727号-1</a></p>
+                        <p>地址：北京市海淀区高粱桥斜街28号</p>
+                    </div>
+
+                </div>
+                <div class="footer-sec middle ">
+                    <img src="../../img/erweima.png " />
+                    <span>扫码关注手机微信号</span>
+                </div>
+                <div class="footer-sec right ">
+                    <div class="customInfo ">
+                        <p class="tele ">客服热线（服务时间09:00-18:00）</p>
+                        <p class="number ">010-53320537</p>
+                        <p>客服邮箱：help@hhr360.com</p>
+                        <div class="thanks ">
+                            <span class="special ">特别鸣谢：</span>
+                            <span class="names "><p>阿金；晦聪禅师</p><p>★WYLYF☆；骑士八律</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript " src="../../js/jquery-1.11.3.min.js "></script>
+<script type="text/javascript " src="../../js/common/footer.js "></script>
+<script type="text/javascript " src="../ueditor.config.js"></script>
+<script type="text/javascript " src="../ueditor.all.min.js"></script>
+<script type="text/javascript " src="../swfobject.js"></script>
+<script type="text/javascript " src="../jquery.uploadify.v2.1.4.min.js"></script>
+<script type="text/javascript " src="../qida.js "></script>
+<script type="text/javascript " src="ask.js "></script>
+
+</html>

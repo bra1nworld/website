@@ -1,0 +1,54 @@
+.topnav {
+    width: 100%;
+    height: 70px;
+}
+
+.menu-top {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+}
+
+.menu-top .logo {
+    float: left;
+    margin-top: 15px;
+}
+
+.menu-top .name {
+    float: left;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 14px;
+    margin-left: 20px;
+}
+
+.menu-top .nav-menu {
+    float: right;
+}
+
+.menu-top .nav-menu li {
+    text-align: center;
+    width: 120px;
+    display: inline-block;
+}
+
+.menu-top .nav-menu li:hover {
+    border-bottom: 2px solid #63B8FF;
+}
+
+.menu-top .nav-menu li a:hover {
+    color: #63B8FF;
+}
+
+.menu-top .nav-menu li a {
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-top .nav-menu li.active a {
+    color: #63B8FF;
+}

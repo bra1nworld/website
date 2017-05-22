@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common/init.css">
+    <link rel="stylesheet" href="../css/common/navtop.css">
+    <link rel="stylesheet" href="../css/common/footer.css">
+    <link rel="stylesheet" href="countDown.css">
+    <link rel="stylesheet" href="guess.css">
+
+</head>
+
+<body>
+    <div class="main ">
+        <!--顶部导航栏-->
+        <div class="topnav">
+            <div class="menu-top">
+                <div class="logo">
+                    <img src="../img/logo.png" />
+                </div>
+                <div class="name">超级合伙人</div>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="../qidian/qidian.html">奇点算股</a>
+                    </li>
+                    <li>
+                        <a href="../qida/hot/hot.html">奇答问股</a>
+                    </li>
+                    <li class="active">
+                        <a href="../guess/guess.html">大盘猜猜乐</a>
+                    </li>
+                    <li>
+                        <a href="../live/live.html">抽奖竞猜</a>
+                    </li>
+                    <li>
+                        <a href="../aboutUs/aboutUs.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="../login/login.html">登录/注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--顶部图片-->
+        <div class="guessImg"></div>
+        <div class="main-container">
+            <!--k线图-->
+            <div class="kLine">
+                <div class="kLine-title">
+                    <span class="kLineName">上证综合指数&nbsp;&nbsp;</span>
+                    <span class="nowDate">2017/04/25/星期二11:20</span>
+                    <span id="prices" class=" red">
+                        <span class="curPrice">3146.58</span>
+                    <span class="change">
+                            <i class='guessUp changeArrow'></i>
+                            <span class="changePrice">45.3</span>
+                    <span class="changeRate">0.05%</span>
+                    </span>
+                    </span>
+                </div>
+                <div id="main1"></div>
+                <div id="main2"></div>
+            </div>
+            <!--tab竞猜区域-->
+            <div class="top">
+                <!--左上方图片-->
+                <div class="top-image">
+                </div>
+                <!--竞猜主区域-->
+                <div class="top-con">
+                    <div class="border-div prev-div">
+                    </div>
+                    <ul id="mainTab" class="nav nav-tabs">
+                        <li class=" prev ">
+                            <a href="#prev" data-toggle="tab">
+                                <div class="mainTab-title"><span class="tab-date">04-24</span><span class="tab-periods">3239.33</span></div>
+                            </a>
+                        </li>
+                        <li class="today active">
+                            <a href="#today" data-toggle="tab">
+                                <div class="mainTab-title"><span class="tab-date">04-25</span><span class="tab-periods">3239.33</span></div>
+                            </a>
+                        </li>
+                        <li class="next">
+                            <a href="#next" data-toggle="tab">
+                                <div class="mainTab-title"><span class="tab-date">04-26</span><span class="tab-periods">3239.33</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="border-div next-div">
+                    </div>
+                    <div id="mainTabContent" class="tab-content">
+                        <!--昨天-->
+                        <div id="prev" class="tab-pane fade ">
+                            <!--上午竞猜结果区域-->
+                            <div class="result-area">
+                                <div class="result-table">
+                                    <button class="top-button" type="button"><span class="AmOrPm am">上午</span>场开奖结果</button>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>开奖结果</th>
+                                                <th>猜盘准确率</th>
+                                                <th>发放积分</th>
+                                                <th>猜对人数（人）</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th><button class="inc-result inc-button button-child" type="button"></button></th>
+                                                <th>66.6%</th>
+                                                <th>18000000分</th>
+                                                <th>20</th>
+                                            </tr>
+                                            <tr class="tr-last">
+                                                <th><button class="inc-ogg inc-button button-child" type="button"></button></th>
+                                                <th>66.6%</th>
+                                                <th>18000000分</th>
+                                                <th>20</th>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!--下午竞猜结果区域-->
+                            <div class="result-area">
+                                <div class="result-table">
+                                    <button class="top-button" type="button"><span class="AmOrPm am">下午</span>场开奖结果</button>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>开奖结果</th>
+                                                <th>猜盘准确率</th>
+                                                <th>发放积分</th>
+                                                <th>猜对人数（人）</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th><button class="inc-result inc-button button-child" type="button"></button></th>
+                                                <th>66.6%</th>
+                                                <th>18000000分</th>
+                                                <th>20</th>
+                                            </tr>
+                                            <tr class="tr-last">
+                                                <th><button class="inc-ogg inc-button button-child" type="button"></button></th>
+                                                <th>66.6%</th>
+                                                <th>18000000分</th>
+                                                <th>20</th>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!--当天-->
+                        <div id="today" class="tab-pane fade in active">
+                            <!--竞猜结果区域-->
+                            <div class="result-area">
+                                <div class="result-table">
+                                    <button class="top-button" type="button"><span class="AmOrPm am">上午</span>场开奖结果</button>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>开奖结果</th>
+                                                <th>猜盘准确率</th>
+                                                <th>发放积分</th>
+                                                <th>猜对人数（人）</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th><button class="inc-result inc-button button-child" type="button"></button></th>
+                                                <th>66.6%</th>
+                                                <th>18000000分</th>
+                                                <th>20</th>
+                                            </tr>
+                                            <tr class="tr-last">
+                                                <th><button class="inc-ogg inc-button button-child" type="button"></button></th>
+                                                <th>66.6%</th>
+                                                <th>18000000分</th>
+                                                <th>20</th>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!--竞猜区域-->
+                            <div class="guess-area">
+                                <div class="tab-left tab-con">
+                                    <div class="buttons">
+                                        <button class="inc-all inc-button button-father " type="button"></button>
+                                        <button class="inc-ogg inc-button button-child " type="button"></button>
+                                        <button class="inc-even inc-button button-child " type="button"></button>
+                                    </div>
+                                    <div class="inc-title">
+                                        <span>看涨总积分</span><span class="inc-bonus-pot">18000000</span><span>分</span>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span class="left inc-name">涨</span><span class="inc-people people left">1000/人</span><span class="inc-pot pot right">18000000分</span>
+                                        </li>
+                                        <li>
+                                            <span class="left inc-name">涨（奇）</span><span class="inc-ogg-people people left">600/人</span><span class="inc-ogg-pot pot right">10000000分</span>
+                                        </li>
+                                        <li>
+                                            <span class="left inc-name">涨（偶）</span><span class="inc-even-people people left">400/人</span><span class="inc-even-pot pot right">8000000分</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-middle">
+                                    <button class="top-button" type="button"><span class="AmOrPm am">下午</span>场<span class="period-num">91期</span></button>
+                                    <span class="bonus-pot"><span>奖池累计积分：</span><span class="all-pot">36000000分</span></span>
+                                    <div class="countdown">
+                                        <span>开奖倒计时</span>
+                                        <div class="countdown-card countdown-pm"></div>
+                                        <span>截止时间<span class="endTime">14:40</span>分前</span>
+                                    </div>
+                                    <span class="middle-exp"> 猜中奇、偶积分翻倍</span>
+                                </div>
+                                <div class="tab-right  tab-con">
+                                    <div class="buttons">
+                                        <button class="dec-all dec-button button-father" type="button"></button>
+                                        <button class="dec-ogg dec-button button-child" type="button"></button>
+                                        <button class="dec-even dec-button button-child" type="button"></button>
+                                    </div>
+                                    <div class="inc-title">
+                                        <span>看涨总积分</span><span class="dec-bonus-pot">18000000</span><span>分</span>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span class="left dec-name ">跌</span><span class="dec-people people left">1000/人</span><span class="dec-pot pot right">18000000分</span>
+                                        </li>
+                                        <li>
+                                            <span class="left dec-name ">跌（奇）</span><span class="dec-ogg-people people left">600/人</span><span class="dec-ogg-pot pot right">10000000分</span>
+                                        </li>
+                                        <li>
+                                            <span class="left dec-name ">跌（偶）</span><span class="dec-even-people people left">400/人</span><span class="dec-even-pot pot right">8000000分</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--明天-->
+                        <div id="next" class="tab-pane fade">
+                            <!--竞猜区域-->
+                            <div class="guess-area">
+                                <div class="tab-left tab-con">
+                                    <div class="buttons">
+                                        <button class="inc-all inc-button button-father " type="button"></button>
+                                        <button class="inc-ogg inc-button button-child " type="button"></button>
+                                        <button class="inc-even inc-button button-child " type="button"></button>
+                                    </div>
+                                    <div class="inc-title">
+                                        <span>看涨总积分</span><span class="inc-bonus-pot">18000000</span><span>分</span>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span class="left inc-name">涨</span><span class="inc-people people left">1000/人</span><span class="inc-pot pot right">18000000分</span>
+                                        </li>
+                                        <li>
+                                            <span class="left inc-name">涨（奇）</span><span class="inc-ogg-people people left">600/人</span><span class="inc-ogg-pot pot right">10000000分</span>
+                                        </li>
+                                        <li>
+                                            <span class="left inc-name">涨（偶）</span><span class="inc-even-people people left">400/人</span><span class="inc-even-pot pot right">8000000分</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-middle">
+                                    <button class="top-button" type="button"><span class="AmOrPm am">上午</span>场<span class="period-num">91期</span></button>
+                                    <span class="bonus-pot"><span>奖池累计积分：</span><span class="all-pot">36000000分</span></span>
+                                    <div class="countdown">
+                                        <span>开奖倒计时</span>
+                                        <div class="countdown-card countdown-am"></div>
+                                        <span>截止时间<span class="endTime">11:10</span>分前</span>
+                                    </div>
+                                    <span class="middle-exp"> 猜中奇、偶积分翻倍</span>
+                                </div>
+                                <div class="tab-right  tab-con">
+                                    <div class="buttons">
+                                        <button class="dec-all dec-button button-father" type="button"></button>
+                                        <button class="dec-ogg dec-button button-child" type="button"></button>
+                                        <button class="dec-even dec-button button-child" type="button"></button>
+                                    </div>
+                                    <div class="inc-title">
+                                        <span>看涨总积分</span><span class="dec-bonus-pot">18000000</span><span>分</span>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span class="left dec-name">跌</span><span class="dec-people people left">1000/人</span><span class="dec-pot pot right">18000000分</span>
+                                        </li>
+                                        <li>
+                                            <span class="left dec-name">跌（奇）</span><span class="dec-ogg-people people left">600/人</span><span class="dec-ogg-pot pot right">10000000分</span>
+                                        </li>
+                                        <li>
+                                            <span class="left dec-name ">跌（偶）</span><span class="dec-even-people people left">400/人</span><span class="dec-even-pot pot right">8000000分</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--竞猜区域-->
+                            <div class="guess-area">
+                                <div class="tab-left tab-con">
+                                    <div class="buttons">
+                                        <button class="inc-all inc-button button-father " type="button"></button>
+                                        <button class="inc-ogg inc-button button-child " type="button"></button>
+                                        <button class="inc-even inc-button button-child " type="button"></button>
+                                    </div>
+                                    <div class="inc-title">
+                                        <span>看涨总积分</span><span class="inc-bonus-pot">18000000</span><span>分</span>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span class="left inc-name">涨</span><span class="inc-people people left">1000/人</span><span class="inc-pot pot right">18000000分</span>
+                                        </li>
+                                        <li>
+                                            <span class="left inc-name">涨（奇）</span><span class="inc-ogg-people people left">600/人</span><span class="inc-ogg-pot pot right">10000000分</span>
+                                        </li>
+                                        <li>
+                                            <span class="left inc-name">涨（偶）</span><span class="inc-even-people people left">400/人</span><span class="inc-even-pot pot right">8000000分</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-middle">
+                                    <button class="top-button" type="button"><span class="AmOrPm am">下午</span>场<span class="period-num">91期</span></button>
+                                    <span class="bonus-pot"><span>奖池累计积分：</span><span class="all-pot">36000000分</span></span>
+                                    <div class="countdown">
+                                        <span>开奖倒计时</span>
+                                        <div class="countdown-card countdown-pm"></div>
+                                        <span>截止时间<span class="endTime">14:40</span>分前</span>
+                                    </div>
+                                    <span class="middle-exp"> 猜中奇、偶积分翻倍</span>
+                                </div>
+                                <div class="tab-right  tab-con">
+                                    <div class="buttons">
+                                        <button class="dec-all dec-button button-father" type="button"></button>
+                                        <button class="dec-ogg dec-button button-child" type="button"></button>
+                                        <button class="dec-even dec-button button-child" type="button"></button>
+                                    </div>
+                                    <div class="inc-title">
+                                        <span>看涨总积分</span><span class="dec-bonus-pot">18000000</span><span>分</span>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <span class="left dec-name">跌</span><span class="dec-people people left">1000/人</span><span class="dec-pot pot right">18000000分</span>
+                                        </li>
+                                        <li>
+                                            <span class="left dec-name ">跌（奇）</span><span class="dec-ogg-people people left">600/人</span><span class="dec-ogg-pot pot right">10000000分</span>
+                                        </li>
+                                        <li>
+                                            <span class="left dec-name">跌（偶）</span><span class="dec-even-people people left">400/人</span><span class="dec-even-pot pot right">8000000分</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--排行榜，实时动态-->
+            <div class="middle">
+                <div class="middle-con">
+                    <!--排行榜-->
+                    <div class="rankList left">
+                        <div class="rankTitle">
+                            <span>竞猜牛人榜</span>
+                        </div>
+                        <div class="rank rank-left left">
+                            <div class="rank-title ">
+                                <span>参与次数最多</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">50次</span>
+                                </li>
+                                <li>
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">50次</span>
+                                </li>
+                                <li>
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">50次</span>
+                                </li>
+                                <li>
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">50次</span>
+                                </li>
+                                <li class="last">
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">50次</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="rank rank-middle left">
+                            <div class="rank-title">
+                                <span>猜对次数最多</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">50次</span>
+                                </li>
+                                <li>
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">50次</span>
+                                </li>
+                                <li>
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">50次</span>
+                                </li>
+                                <li>
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">50次</span>
+                                </li>
+                                <li class="last">
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">50次</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=" rank rank-right left">
+                            <div class="rank-title">
+                                <span>积分累计排行</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">5000000</span>
+                                </li>
+                                <li>
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">5000000</span>
+                                </li>
+                                <li>
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">5000000</span>
+                                </li>
+                                <li>
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">5000000</span>
+                                </li>
+                                <li class="last">
+                                    <span class="rankName left">路人甲</span>
+                                    <span class="rankValue right">5000000</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--实时动态-->
+                    <div class="realTime left">
+                        <div class="realTime-title">
+                            <span>实时预测动态</span>
+                        </div>
+                        <div class="realTime-list">
+                            <div class="realTime-ul">
+                                <ul>
+                                    <li>
+                                        <span class="real-time">刚刚</span>
+                                        <span class="real-name">路人乙</span>
+                                        <span class="real-points">1500积分</span>
+                                        <span class="real-result">涨奇</span>
+                                    </li>
+                                    <li>
+                                        <span class="real-time">刚刚</span>
+                                        <span class="real-name">路人乙</span>
+                                        <span class="real-points">1500积分</span>
+                                        <span class="real-result">涨奇</span>
+                                    </li>
+                                    <li>
+                                        <span class="real-time">刚刚</span>
+                                        <span class="real-name">路人乙</span>
+                                        <span class="real-points">1500积分</span>
+                                        <span class="real-result">涨奇</span>
+                                    </li>
+                                    <li>
+                                        <span class="real-time">刚刚</span>
+                                        <span class="real-name">路人乙</span>
+                                        <span class="real-points">1500积分</span>
+                                        <span class="real-result">涨奇</span>
+                                    </li>
+                                    <li>
+                                        <span class="real-time">刚刚</span>
+                                        <span class="real-name">路人乙</span>
+                                        <span class="real-points">1500积分</span>
+                                        <span class="real-result">涨奇</span>
+                                    </li>
+                                    <li>
+                                        <span class="real-time">刚刚</span>
+                                        <span class="real-name">路人乙</span>
+                                        <span class="real-points">1500积分</span>
+                                        <span class="real-result">涨奇</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--我的战绩，规则-->
+            <div class="bottom">
+                <div class="bottom-con">
+                    <!--我的战绩-->
+                    <div class="myrecord left">
+                        <div class="recordTitle">
+                            <span>我的战绩</span>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>猜注时间</th>
+                                    <th>猜注方向</th>
+                                    <th>猜注结果</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <th>17.04.24</th>
+                                    <th>涨(奇)</th>
+                                    <th>正确</th>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <th>17.04.24</th>
+                                    <th>涨(奇)</th>
+                                    <th>正确</th>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <th>17.04.24</th>
+                                    <th>涨(奇)</th>
+                                    <th>正确</th>
+                                </tr>
+                                <tr>
+                                    <th>4</th>
+                                    <th>17.04.24</th>
+                                    <th>涨(奇)</th>
+                                    <th>正确</th>
+                                </tr>
+                                <tr>
+                                    <th>5</th>
+                                    <th>17.04.24</th>
+                                    <th>涨(奇)</th>
+                                    <th>正确</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--竞猜规则-->
+                    <div class="guessRule left">
+                        <div class="rule">
+                            <div class="rule-top">
+                                <span>竞猜规则</span>
+                            </div>
+                            <ul>
+                                <li class="rule-one">
+                                    <span class="rule-tit ">一、活动说明</span>
+                                    <span class="rule-exp">猜涨跌是以上证指数涨跌方向为竞猜标的金融游戏，竞猜每个交易日上证指数是涨还是跌，猜对可获得积分，积分累计可参与抽奖。<br>
+                                上证指数：<br>
+                                指上海证券综合指数，反映上海证券交易所上市股票价格的变动情况。</span>
+                                </li>
+                                <li class="rule-two">
+                                    <span class="rule-tit ">二、活动规则</span>
+                                    <span class="rule-exp">每个T-1日18:00-T日14:00，可竞猜T日上证指数涨跌方向(休市日竞猜休市日后第一个交易日)。<br>
+                                竞猜当期上证指数方向，分为看涨尾数（奇，偶），看跌尾数（奇，偶）。每期每个用户可以多次重复参与竞赛。</span>
+                                </li>
+                                <li class="rule-three">
+                                    <span class="rule-tit ">三、活动奖励</span>
+                                    <span class="rule-exp">正确方向奖励：本人竞猜积分+评分猜错用户的积分。<br>
+                                错误方向惩罚：损失本次竞猜积分，由正确方向瓜分。</span>
+                                </li>
+                            </ul>
+                            <div class="rule-bottom">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-con">
+                <div class="footer-sec left">
+                    <ul>
+                        <li><a href="">公司简介</a></li>
+                        <li><a href="">帮助中心</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">保障与协议</a></li>
+                    </ul>
+                    <div class="companyIntr">
+                        <p>版权所有&copy;超级合伙人 Copyright Reserved &nbsp;&nbsp;2014-2016 &nbsp;&nbsp;<a target="_blank" href="http://www.miitbeian.gov.cn">沪ICP备15014727号-1</a></p>
+                        <p>小合网络科技（上海）有限公司&nbsp;&nbsp;<a target="_blank" href="http://www.miitbeian.gov.cn">沪ICP备15014727号-1</a></p>
+                        <p>地址：北京市海淀区高粱桥斜街28号</p>
+                    </div>
+
+                </div>
+                <div class="footer-sec middle">
+                    <img src="../img/erweima.png" />
+                    <span>扫码关注手机微信号</span>
+                </div>
+                <div class="footer-sec right">
+                    <div class="customInfo">
+                        <p class="tele">客服热线（服务时间09:00-18:00）</p>
+                        <p class="number">010-53320537</p>
+                        <p>客服邮箱：help@hhr360.com</p>
+                        <div class="thanks">
+                            <span class="special">特别鸣谢：</span>
+                            <span class="names"><p>阿金；晦聪禅师</p><p>★WYLYF☆；骑士八律</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../js/echarts.common.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="kline.min.js"></script>
+<script type="text/javascript" src="countDown.min.js"></script>
+<script type="text/javascript" src="../js/common/footer.js"></script>
+<script type="text/javascript" src="guess.js"></script>
+
+</html>

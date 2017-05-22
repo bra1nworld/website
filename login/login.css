@@ -1,0 +1,263 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Microsoft YaHei"
+}
+
+.main {
+    overflow: auto;
+    background: url("../img/guess-bg.jpg") no-repeat;
+    height: 100%;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.login_register {
+    width: 480px;
+    background-color: rgba(5, 66, 107, 0.25);
+    margin: 0 auto;
+}
+
+#mainTab {
+    height: 45px;
+    border-bottom: 0;
+    border-top: 1px solid #06a1ae;
+}
+
+#mainTab li {
+    width: 240px;
+    text-align: center;
+    border-bottom: 1px solid #06a1ae;
+}
+
+#mainTab li.active {
+    border-bottom: 0;
+}
+
+#mainTab li a {
+    color: #ffffff;
+    border: 0;
+    border-radius: 0;
+    font-size: 16px;
+    margin-right: 0;
+    background-color: rgba(5, 66, 107, 0.50);
+}
+
+#mainTab li.active a {
+    background: transparent;
+}
+
+#login {
+    height: 275px;
+}
+
+#register {
+    height: 585px;
+}
+
+#mainTabContent .login-form {
+    width: 355px;
+    color: #198edc;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+#mainTabContent .login-form>span {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+
+#mainTabContent .login-form>input {
+    width: 355px;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 10px;
+    color: #1480c9;
+    background-color: rgba(5, 66, 107, 0.5);
+    border: 1px solid #06a1ae;
+}
+
+#mainTabContent .login-form>.remember {
+    height: 40px;
+    line-height: 40px;
+}
+
+#mainTabContent .login-form>.remember>.left {
+    float: left;
+}
+
+#mainTabContent .login-form .checkboxDiv>input {
+    display: none;
+}
+
+#mainTabContent .login-form .checkboxDiv>input+label {
+    background-color: rgba(5, 66, 107, 0.5);
+    border: 1px solid #06a1ae;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 7px;
+}
+
+#mainTabContent .login-form .checkboxDiv>input:checked+label:after {
+    content: '\2714';
+    position: absolute;
+    top: -14px;
+    left: 0px;
+    color: #1480c9;
+    width: 100%;
+    text-align: center;
+}
+
+#login .login-form>.remember>.left>span {
+    margin-left: 5px;
+}
+
+#login .login-form>.remember>a {
+    float: right;
+    margin-right: 5px;
+}
+
+#login .login-form>.remember>a:hover {
+    text-decoration: none;
+}
+
+#mainTabContent .login-form>button {
+    height: 45px;
+    background: #1480c9;
+    font-size: 16px;
+    color: #ffffff;
+    border: 0;
+}
+
+#login .login-form>button,
+#register .login-form>button {
+    width: 355px;
+}
+
+#register .login-form>input.telIdentify {
+    width: 192px;
+}
+
+#register .login-form>button.telIdentify-btn {
+    width: 154px;
+    height: 40px;
+    margin-left: 4px;
+}
+
+#register .login-form .agree {
+    height: 40px;
+    line-height: 40px;
+}
+
+#register .login-form .agree span {
+    margin-left: 5px;
+}
+
+#register .login-form .agree span>a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.two-bar-code {
+    display: none;
+    width: 220px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+}
+
+.two-bar-code>img {
+    width: 220px;
+    height: 220px;
+}
+
+.two-bar-code>span {
+    display: block;
+    color: #1480c9;
+}
+
+.two-bar-code>.firstSpan {
+    margin-top: 10px;
+}
+
+.floatRight {
+    position: absolute;
+    right: 0;
+    top: 280px;
+    width: 42px;
+}
+
+.floatRight>div>a {
+    color: #ffffff;
+    width: 42px;
+    height: 42px;
+    display: block;
+    padding: 0 7px;
+    background-color: rgba(5, 66, 107, 0.25);
+    box-shadow: 0 0 10px #ffffff
+}
+
+.floatRight>div>a:hover {
+    text-decoration: none;
+    color: #ffffff
+}
+
+.floatRight .wechat {
+    margin-top: 10px;
+    position: relative;
+}
+
+.floatRight>div.wechat>img {
+    display: none;
+    content: '';
+    background-image: url('../img/borwx.png');
+    position: absolute;
+    width: 191px;
+    height: 183px;
+    top: -65px;
+    right: 45px;
+}
+
+@media \0screen {
+    /* 只支持IE8 */
+    .login_register,
+    #mainTab li a,
+    .floatRight>div>a,
+    #login .login-form>input,
+    #login .login-form>.remember>.left>input+label {
+        background-color: #05426b;
+        filter: Alpha(opacity=25);
+        position: static;
+        *zoom: 1;
+    }
+    #mainTab li a,
+    #login .login-form>input,
+    #login .login-form>.remember>.left>input+label {
+        filter: Alpha(opacity=50);
+    }
+    .login_register>ul,
+    .login_register>div,
+    #mainTab li a>div {
+        position: relative;
+        /* 设置子元素为相对定位，可让子元素不继承Alpha值 */
+    }
+    #mainTabContent .login-form .checkboxDiv>input {
+        display: inline-block;
+        position: relative;
+        top: 2px;
+    }
+    #mainTabContent .login-form .checkboxDiv>label {
+        display: none;
+    }
+}

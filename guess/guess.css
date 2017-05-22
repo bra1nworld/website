@@ -1,0 +1,691 @@
+body {
+    background: url('../img/guessImg/guess-bg.jpg') no-repeat;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+
+.main-container table th {
+    text-align: center;
+}
+
+.main-container .left,
+.klineFL {
+    float: left;
+}
+
+.main-container .right,
+.klineFR {
+    float: right;
+}
+
+.kLine-title {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.kLine-title .kLineName {
+    margin-left: 240px;
+}
+
+.kLine-title span {
+    font-size: 18px;
+}
+
+.kLine-title #prices {
+    margin-left: 80px;
+}
+
+.kLine-title #prices.red {
+    color: #FF4040;
+}
+
+.kLine-title #prices.green {
+    color: #00EE76;
+}
+
+.kLine-title .curPrice {
+    font-size: 40px;
+}
+
+.kLine-title .change {
+    font-size: 14px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.kLine-title .change .changeArrow {
+    position: absolute;
+    top: 0;
+    left: -16px;
+    width: 14px;
+    height: 20px;
+}
+
+.kLine-title .changeRate {
+    margin-left: 30px;
+}
+
+.kLine-title .change .changeArrow.guessUp {
+    background: url('../img/guessImg/guessUp.png') no-repeat;
+}
+
+.kLine-title .change .changeArrow.guessDown {
+    background: url('../img/guessImg/guessDown.png') no-repeat;
+}
+
+#main1 {
+    width: 800px;
+    margin: 0 auto;
+    height: 400px;
+}
+
+#main2 {
+    height: 220px;
+    margin: 0 auto;
+    margin-top: -80px;
+    width: 800px;
+}
+
+table>tbody>tr>th {
+    font-weight: normal;
+}
+
+.guessImg {
+    width: 100%;
+    min-width: 1200px;
+    height: 210px;
+    background-image: url('../img/guessImg/guess.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*top  start*/
+
+.result-area,
+.guess-area {
+    height: 420px;
+}
+
+.result-area {
+    padding-top: 25px;
+}
+
+.main-container .top {
+    width: 100%;
+    position: relative;
+}
+
+.top-image {
+    width: 241px;
+    height: 230px;
+    background: url('../img/guessImg/top-image.png') no-repeat;
+    position: absolute;
+    top: -167px;
+    left: -18px;
+}
+
+.top-con {
+    width: 1154px;
+    height: 1006px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 80px 0;
+    background: url('../img/guessImg/top-bg.png') no-repeat;
+}
+
+.top-con .border-div {
+    height: 60px;
+    width: 82px;
+    display: inline-block;
+    border-bottom: 1px solid #00ffff
+}
+
+.top-con .prev-div {
+    /*margin-right: -4px;在IE浏览器有1px误差*/
+    margin-right: -5px;
+}
+
+.top-con .next-div {
+    margin-left: -4px;
+}
+
+#mainTab {
+    width: 990px;
+    display: inline-block;
+    border: 0
+}
+
+#mainTab>li {
+    width: 330px;
+    border-bottom: 1px solid #00ffff;
+    margin-bottom: 0;
+}
+
+#mainTab>li.active {
+    border-bottom: 1px solid transparent;
+}
+
+#mainTab>li>a {
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 0;
+    margin-right: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    height: 60px;
+    background-color: rgba(0, 255, 255, 0.2);
+}
+
+@media \0screen {
+    /* 只支持IE8 */
+    #mainTab>li>a,
+    #mainTab>li>a:hover,
+    .rankList,
+    #mainTabContent .result-table>table {
+        background-color: #00ffff;
+        filter: Alpha(opacity=20);
+        position: static;
+        *zoom: 1;
+    }
+    #mainTab>li>a:hover {
+        filter: Alpha(opacity=15);
+    }
+    #mainTabContent .result-table>table {
+        background-color: #ffffff;
+        filter: Alpha(opacity=16);
+    }
+    .rankList {
+        filter: Alpha(opacity=4);
+    }
+    .rankList>.rank {
+        filter: Alpha(opacity=7);
+    }
+    #mainTab>li>a .mainTab-title,
+    #mainTab>li>a:hover .mainTab-title,
+    #mainTabContent .result-table>table>thead>tr>th,
+    #mainTabContent .result-table>table>tbody>tr>th,
+    .rankList>div,
+    .rankList>.rank>div,
+    .rankList>.rank>ul {
+        position: relative;
+        /* 设置子元素为相对定位，可让子元素不继承Alpha值 */
+    }
+}
+
+#mainTab>li>a:hover {
+    background-color: rgba(0, 255, 255, 0.15);
+    border: 1px solid transparent;
+}
+
+#mainTab>li.active>a,
+#mainTab>li.active>a:hover {
+    background: transparent;
+    border: 0;
+    border-bottom-color: 0;
+}
+
+#mainTab>li.active {
+    border: 1px solid #00ffff;
+    border-bottom-color: transparent;
+    margin-top: -1px;
+}
+
+#mainTab .tab-periods {
+    margin-left: 20px;
+}
+
+#mainTab .mainTab-title {
+    margin-top: 5px;
+}
+
+
+/*top tab-left  start*/
+
+#mainTabContent .tab-con {
+    display: inline-block;
+    margin-left: 52px;
+    width: 320px;
+}
+
+#mainTabContent .tab-con .buttons {
+    margin-top: 30px;
+    margin-left: 14px;
+}
+
+#mainTabContent .tab-con .inc-title {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#mainTabContent .tab-con .inc-bonus-pot {
+    margin-left: 20px;
+}
+
+#mainTabContent .tab-con>ul {
+    margin-top: 20px;
+    padding: 0 18px;
+}
+
+#mainTabContent .tab-con>ul>li {
+    width: 100%;
+    height: 24px;
+}
+
+#mainTabContent ul .inc-name,
+#mainTabContent ul .dec-name {
+    width: 40%
+}
+
+#mainTabContent .buttons .inc-even,
+#mainTabContent .buttons .dec-even {
+    margin-left: 14px;
+}
+
+#mainTabContent .inc-button {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 25px #e1234c, 0 0 25px #ffffff;
+    -webkit-box-shadow: 0 0 25px #e1234c, 0 0 25px #ffffff;
+    -moz-box-shadow: 0 0 25px #e1234c, 0 0 25px #ffffff;
+    border: 0;
+}
+
+#mainTabContent .button-father {
+    width: 292px;
+    height: 81px;
+}
+
+#mainTabContent .inc-all {
+    background: url('../img/guessImg/inc.png') no-repeat;
+}
+
+#mainTabContent .button-child {
+    width: 137px;
+    height: 82px;
+    margin-top: 30px;
+}
+
+#mainTabContent .inc-ogg {
+    background: url('../img/guessImg/inc-ogg.png') no-repeat;
+}
+
+#mainTabContent .inc-even {
+    background: url('../img/guessImg/inc-even.png') no-repeat;
+}
+
+
+/*top tab-left  end*/
+
+
+/*top tab-middle  start*/
+
+#mainTabContent .tab-middle {
+    width: 330px;
+    margin-left: 36px;
+    margin-top: 80px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+#mainTabContent .top-button {
+    display: block;
+    width: 170px;
+    height: 50px;
+    color: #fff6ae;
+    font-size: 20px;
+    background: url('../img/guessImg/top-button.png') no-repeat;
+    margin: 0 auto;
+    border: 0;
+}
+
+#mainTabContent .tab-middle .period-num {
+    margin-left: 20px;
+}
+
+#mainTabContent .tab-middle .bonus-pot {
+    font-size: 18px;
+    height: 38px;
+    line-height: 38px;
+}
+
+#mainTabContent .tab-middle .countdown {
+    width: 330px;
+    height: 116px;
+    overflow: hidden;
+    background: url('../img/guessImg/countdown.png') no-repeat;
+}
+
+#mainTabContent .tab-middle .countdown>span {
+    line-height: 20px;
+    height: 20px;
+    display: block;
+}
+
+#mainTabContent .tab-middle .countdown>span {
+    line-height: 30px;
+    height: 30px;
+}
+
+#mainTabContent .tab-middle .countdown-card {}
+
+#mainTabContent .tab-middle .middle-exp {
+    margin-top: 18px;
+    display: block;
+}
+
+
+/*top tab-middle  end*/
+
+
+/*top tab-right  start*/
+
+#mainTabContent .tab-right {
+    margin-left: 36px;
+}
+
+#mainTabContent .dec-all {
+    background: url('../img/guessImg/dec.png') no-repeat;
+}
+
+#mainTabContent .dec-ogg {
+    background: url('../img/guessImg/dec-ogg.png') no-repeat;
+}
+
+#mainTabContent .dec-even {
+    background: url('../img/guessImg/dec-even.png') no-repeat;
+}
+
+#mainTabContent .dec-button {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 25px #32949d, 0 0 25px #ffffff;
+    -webkit-box-shadow: 0 0 25px #32949d, 0 0 25px #ffffff;
+    -moz-box-shadow: 0 0 25px #32949d, 0 0 25px #ffffff;
+    border: 0;
+}
+
+
+/*top tab-right  end*/
+
+
+/*result-table start*/
+
+#mainTabContent .result-table>table {
+    width: 1055px;
+    height: 286px;
+    margin: 0 auto;
+    margin-top: 25px;
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+#mainTabContent .result-table>table button {
+    margin-top: 10px;
+}
+
+#mainTabContent .result-table>table>thead {
+    font-size: 16px;
+    border-bottom: 1px solid #606e79;
+}
+
+#mainTabContent .result-table>table>thead>tr>th {
+    font-weight: normal;
+    height: 55px;
+}
+
+#mainTabContent .result-table>table>tbody {
+    font-size: 20px;
+}
+
+#mainTabContent .result-table>table>tbody>tr>th {
+    height: 114px;
+    border-bottom: 1px dashed #606e79;
+}
+
+#mainTabContent .result-table>table>tbody>tr.tr-last>th {
+    border-bottom: 0
+}
+
+#mainTabContent .dec-result {
+    background: url('../img/guessImg/dec-result.png') no-repeat;
+}
+
+#mainTabContent .inc-result {
+    background: url('../img/guessImg/inc-result.png') no-repeat;
+}
+
+
+/*result-table end*/
+
+
+/*top  end*/
+
+
+/*middle  start*/
+
+.main-container .middle {
+    height: 376px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.middle-con {
+    display: table;
+    margin: 0 auto;
+}
+
+.rankList {
+    width: 740px;
+    height: 350px;
+    background-color: rgba(0, 255, 255, 0.04);
+}
+
+.main-container .rankTitle {
+    font-size: 20px;
+    height: 50px;
+    width: 480px;
+    line-height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 6px;
+    background: url('../img/guessImg/rank.png') no-repeat;
+}
+
+.main-container .middle .rank {
+    width: 204px;
+    height: 240px;
+    margin: 34px 14px 30px 14px;
+    background-color: rgba(0, 255, 255, 0.07);
+}
+
+.main-container .middle .rank-middle {
+    height: 262px;
+    margin: 12px 36px 30px 36px;
+}
+
+.main-container .middle .rank-title {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.rank-left .rank-title {
+    background-image: url('../img/guessImg/max-times.png');
+}
+
+.main-container .middle .rank-middle .rank-title {
+    height: 46px;
+    line-height: 40px;
+    background-image: url('../img/guessImg/max-right.png');
+}
+
+.rank-right .rank-title {
+    background-image: url('../img/guessImg/max-times.png');
+}
+
+.main-container .middle .rank>ul>li {
+    height: 38px;
+    line-height: 38px;
+    margin: 0 20px;
+    border-bottom: 1px solid #CAE1FF
+}
+
+.main-container .middle .rank>ul>li.last {
+    border: 0;
+}
+
+.main-container .middle .rank-middle>ul>li {
+    height: 42px;
+    line-height: 42px;
+}
+
+.realTime {
+    margin-left: 55px;
+    width: 357px;
+    height: 395px;
+    margin-top: 10px;
+    background: url('../img/guessImg/realTime.png') no-repeat
+}
+
+.realTime-title {
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center
+}
+
+.realTime .realTime-ul {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.realTime .realTime-ul li {
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.realTime .realTime-ul li>span {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.realTime .realTime-ul .real-time {
+    width: 20%;
+}
+
+.realTime .realTime-ul .real-name {
+    width: 30%;
+}
+
+.realTime .realTime-ul .real-points {
+    width: 30%;
+}
+
+.realTime .realTime-ul .real-result {
+    width: 15%;
+}
+
+
+/*middle  end*/
+
+
+/*bottom start*/
+
+.main-container .bottom {
+    height: 400px;
+    margin-top: 40px;
+}
+
+.bottom-con {
+    display: table;
+    margin: 0 auto;
+}
+
+.myrecord {
+    width: 430px;
+    height: 367px;
+    background: url('../img/guessImg/myResult.png') no-repeat;
+}
+
+.recordTitle {
+    font-size: 16px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center
+}
+
+.myrecord table {
+    width: 100%;
+}
+
+.myrecord table thead {
+    font-size: 16px;
+}
+
+.myrecord table tbody {
+    font-size: 14px;
+}
+
+.myrecord table tr {
+    height: 35px;
+}
+
+.guessRule {
+    margin-left: 70px;
+    width: 620px;
+    height: 356px;
+    line-height: 24px;
+}
+
+.rule ul {
+    margin-top: 10px;
+}
+
+.rule-top {
+    width: 632px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 20px;
+    margin-top: 6px;
+    background: url('../img/guessImg/rule-top.png') no-repeat;
+}
+
+.rule-top>span {
+    margin-left: 150px;
+}
+
+.rule-bottom {
+    width: 622px;
+    height: 39px;
+    background: url('../img/guessImg/rule-bottom.png') no-repeat;
+}
+
+.guessRule .rule-exp {
+    margin-left: 27px;
+    display: block;
+}
+
+.guessRule .rule-tit {
+    display: block;
+}
+
+
+/*bottom end*/

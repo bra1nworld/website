@@ -1,0 +1,266 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+
+.main {
+    overflow: auto;
+    background: url("../img/guess-bg.jpg") no-repeat;
+    height: 100%;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.leftUl {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+/*tab start*/
+
+.leftUl>ul {
+    border: 0;
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.leftUl>ul>li {
+    margin-bottom: 0;
+}
+
+.leftUl>ul>li>a {
+    width: 150px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0;
+    padding: 0;
+    border: 0 !important;
+    border-top: 1px solid #A09E9E !important;
+    border-radius: 0;
+}
+
+.leftUl>ul>li>a:hover,
+.leftUl>ul>li.active>a {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.leftUl>ul>li.active>a,
+.leftUl>ul>li.active>a:hover {
+    border: 0 !important;
+    border-top: 1px solid #A09E9E !important;
+    color: #1dfcff !important;
+}
+
+.leftUl>ul>li.active>a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 10px solid #1dfcff;
+    border-left: 10px solid transparent;
+}
+
+.leftUl>ul>li.aboutUs-child>a {
+    background: transparent !important;
+}
+
+.leftUl>ul>li:first-child>a,
+.leftUl>ul>li:first-child>a:hover,
+.leftUl>ul>li.first-child>a,
+.leftUl>ul>li.first-child>a:hover {
+    border-top: 0 !important;
+}
+
+.leftUl>ul>.aboutUs-father>a {
+    cursor: pointer;
+}
+
+
+/*tab end*/
+
+
+/*content start*/
+
+#mainTabContent {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 1000px;
+    /*height: 500px;*/
+    margin-left: 20px;
+    display: inline-block;
+    color: #ffffff;
+}
+
+#introduce .contaier_box {
+    padding: 20px;
+}
+
+#introduce .contaier_box>p {
+    text-indent: 2em;
+    line-height: 36px;
+}
+
+#mainTabContent .con-title {
+    font-size: 18px;
+    height: 45px;
+    color: #1dfcff;
+    line-height: 45px;
+    border-bottom: 1px solid #eeeeee;
+    width: 980px;
+    margin: 0 auto;
+}
+
+#mainTabContent .con-title>span {
+    height: 22px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #1dfcff
+}
+
+#contact .con-list>ul {
+    margin-left: 32px;
+}
+
+#contact .con-list>ul>li {
+    height: 36px;
+    line-height: 36px
+}
+
+#contact .addressImg>img {
+    width: 900px;
+    height: 646px;
+    margin: 15px auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+#help .panel-group {
+    padding: 0 60px;
+    margin-top: 30px;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+#help .panel {
+    background: transparent;
+    border: 0;
+    border-radius: none;
+    box-shadow: none;
+}
+
+#help .panel-heading {
+    background: transparent;
+    color: #ffffff;
+    border: 0;
+    padding: 0;
+}
+
+#help .panel-heading a {
+    height: 46px;
+    display: block;
+    line-height: 46px;
+}
+
+#help .panel-heading a>span {
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+#help .panel-body {
+    border: 0;
+    line-height: 40px;
+    background-color: rgba(255, 255, 255, 0.2)
+}
+
+#agreement .contaier_box {
+    padding: 0 32px;
+}
+
+#agreement .contaier_box p,
+#agreement .contaier_box tr,
+#agreement .contaier_box h3,
+#agreement .contaier_box h2 {
+    line-height: 36px;
+}
+
+#agreement .contaier_box h2 {
+    padding-top: 20px
+}
+
+#agreement .safeXY {
+    display: block;
+}
+
+#agreement .safeXY .agreement_hhr a {
+    color: #0092ff;
+}
+
+#agreement .contaier_bod p {
+    padding: 10px 0px;
+}
+
+#agreement .contaier_bod th {
+    border: 1px solid #000000;
+    padding: 7px;
+}
+
+#agreement .contaier_bod td {
+    border: 1px solid #000000;
+    padding: 5px;
+    line-height: 30px;
+}
+
+#agreement .contaier_bod h2 {
+    font-size: 18px;
+}
+
+#agreement .lft {
+    float: left;
+    display: inline;
+}
+
+
+/*content end*/
+
+@media \0screen {
+    /* 只支持IE8 */
+    .leftUl>ul>li>a,
+    #mainTabContent,
+    #help .panel-body {
+        background-color: #ffffff;
+        filter: Alpha(opacity=10);
+        position: static;
+        *zoom: 1;
+    }
+    #help .panel-body {
+        filter: Alpha(opacity=20);
+    }
+    .leftUl>ul>li>a>span,
+    #mainTabContent>div,
+    #help .panel-body>span {
+        position: relative;
+        /* 设置子元素为相对定位，可让子元素不继承Alpha值 */
+    }
+}

@@ -1,0 +1,380 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    overflow: auto;
+    background: url("../img/guess-bg.jpg") no-repeat;
+    height: 100%;
+}
+
+.qida-vav {
+    width: 100%;
+    min-width: 1200px;
+    height: 60px;
+    margin-top: 2px;
+    background-color: rgba(27, 231, 255, 0.15);
+}
+
+@media \0screen {
+    /* 只支持IE8 */
+    .qida-vav {
+        background-color: #1be7ff;
+        filter: Alpha(opacity=15);
+        position: static;
+        *zoom: 1;
+    }
+    .qida-nav-area {
+        position: relative;
+        /* 设置子元素为相对定位，可让子元素不继承Alpha值 */
+    }
+}
+
+.qida-nav-area {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.qida-van-input {
+    position: relative;
+    width: 486px;
+    float: left;
+    margin-left: 50px;
+}
+
+.qida-van-input .search-input {
+    height: 36px;
+    width: 100%;
+    border: 0;
+    font-size: 20px;
+    line-height: 36px;
+    margin-top: 12px;
+    padding-left: 5px;
+    color: #18b1e5;
+    background: #ffffff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+.qida-van-input:after {
+    content: '';
+    background-size: 28px 27px;
+    position: absolute;
+    width: 28px;
+    height: 27px;
+    top: 16px;
+    right: 10px;
+    background-image: url(../img/search.png);
+}
+
+.qida-nav-area>ul {
+    float: left;
+    margin-top: 16px;
+    margin-left: 30px;
+}
+
+.qida-nav-area>ul>li {
+    float: left;
+    width: 80px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.qida-nav-area>ul>li>a {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.qida-nav-area>ul>li.active>a {
+    color: #18b1e5;
+}
+
+.qida-nav-area>ul>li>a:hover {
+    text-decoration: none;
+}
+
+.personalArea {
+    float: right;
+    width: 100px;
+    height: 100%;
+    margin-right: 50px;
+    position: relative;
+}
+
+.personalArea>a {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.personalArea>a.messages:hover>span {
+    color: #2db1e1;
+}
+
+.personalArea>a.head-pic {
+    margin-left: -4px;
+}
+
+.personalArea .messages>span {
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.personalArea .head-pic>img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+}
+
+.main-container {
+    width: 1200px;
+    background: #ffffff;
+    margin: 20px auto;
+    padding-bottom: 30px;
+    -moz-box-shadow: 0 0 15px #ffffff;
+    -webkit-box-shadow: 0 0 15px #ffffff;
+    box-shadow: 0 0 15px #ffffff;
+    font-family: "microsoft YaHei"
+}
+
+.informationTop {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    z-index: 10000;
+    border: 1px solid #dfdfdf;
+    box-shadow: 0 2px 10px #aaa;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.informationTop a {
+    cursor: pointer;
+}
+
+.informationTop a:hover {
+    text-decoration: none;
+}
+
+.messTip .inforBod {
+    padding: 10px;
+    text-align: center;
+}
+
+.inforBody-mesg {
+    margin-bottom: 3px;
+    width: 90px;
+}
+
+.inforBody-dext {
+    text-align: center;
+}
+
+.defaultCol {
+    color: #28b2e3;
+    margin-bottom: 5px;
+}
+
+.messages {
+    position: relative;
+}
+
+.meTip {
+    width: 300px;
+    top: 60px;
+}
+
+.informationTop {
+    position: absolute;
+    right: 0;
+    z-index: 10000;
+    border: 1px solid #dfdfdf;
+    box-shadow: 0 2px 10px #aaa;
+    font-size: 14px;
+    background: #fff;
+}
+
+.informationTop.messTip {
+    right: 50px;
+}
+
+.inforBod {
+    padding: 20px 20px 10px;
+}
+
+.inforBody-gz {
+    display: inline-block;
+    float: left;
+}
+
+.information-tox img,
+.hmesg-toux a img {
+    border-radius: 100%;
+    display: block;
+    float: left;
+    height: 60px;
+    margin-right: 10px;
+    width: 60px;
+}
+
+.inforBody-text {
+    margin-left: 70px;
+}
+
+.defaultCol {
+    color: #28b2e3;
+}
+
+.defaultCol a {
+    color: #28b2e3 !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.meTip .chartName-jifen {
+    margin-bottom: 5px;
+}
+
+.smalSize {
+    font-size: 12px;
+}
+
+.chartName-jifen>a {
+    margin: 0;
+}
+
+.timony {
+    background: #004e99 none repeat scroll 0 0;
+    color: #fff !important;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 1px 5px;
+    float: right;
+}
+
+.chartName-nav {
+    background: #ededed none repeat scroll 0 0;
+    height: 30px;
+    line-height: 30px;
+}
+
+.chartName-nav ul li:first-child {
+    border-left: none;
+}
+
+.chartName-nav ul li {
+    border-left: 1px solid #b0b0b0;
+    float: left;
+    text-align: center;
+    width: 74.5px;
+}
+
+li {
+    list-style: none;
+}
+
+.chartName-nav ul li a {
+    color: #727171;
+    font-size: 14px;
+    padding: 0;
+}
+
+.more {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #C9C9C9;
+    text-align: right;
+}
+
+.more>a {
+    text-decoration: none;
+    color: #727171;
+    cursor: pointer;
+    position: relative;
+    margin-right: 12px;
+}
+
+.more>a:after {
+    content: '';
+    background: url("../img/more-arraw.png") no-repeat;
+    position: absolute;
+    width: 6px;
+    height: 7px;
+    top: 8px;
+    right: -12px;
+}
+
+.pagDiv {
+    display: table;
+    margin: 0 auto;
+}
+
+.pagination {
+    position: relative;
+    text-align: center;
+}
+
+.pagination span {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.pagination a {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    color: #CFCFCF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.pagination input {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    outline: none;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.pagination .active {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #2b9efb;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #2b9efb;
+}
